@@ -16,13 +16,15 @@ If you are basically "stuck" in windows, don't worry there is a really simple wa
 
 Open the settings app.
 
-Find the recovery section.
+Navigate to the Windows Update section.
+
+Select the "advanced options" section.
+
+Select the "recovery" section.
 
 Select "advanced restart".
 
 Restart using the "advanced restart" option.
-
-
 
 ### Step 1: Installing efibootmgr
 
