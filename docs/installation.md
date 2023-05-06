@@ -1,6 +1,6 @@
 # Installing Arch
 
-**The current day is Friday, May 5th, 2023. THIS GUIDE WILL PROBABLY NOT WORK 5 OR 6 MONTHS AFTER MAY 2023, because Arch is a constantly changing distro. DO NOT FOLLOW THIS GUIDE IF MAY 2023 WAS MORE THAN 5 OR 6 MONTHS AGO!**
+**THIS GUIDE WILL PROBABLY NOT WORK 5 OR 6 MONTHS AFTER MAY 2023, because Arch is a constantly changing distro. DO NOT FOLLOW THIS GUIDE IF MAY 2023 WAS MORE THAN 5 OR 6 MONTHS AGO!**
 
 **I AM NOT RESPONSIBLE FOR YOU BREAKING YOUR COMPUTER BY FOLLOWING THIS GUIDE INCORRECTLY.**
 
@@ -8,7 +8,7 @@
 
 You need
  - a USB drive
-    - at least 2GB
+    - empty with at least 2GB storage space
  - modern UEFI firmware
     - this guide is not made for legacy, non-UEFI firmware, I do not know how those work.
     - I have an HP Pavilion, so my HP UEFI might look a little different from yours, but most stuff will be similar.
@@ -16,10 +16,8 @@ You need
     - at least 20GB storage
     - at least 2GB RAM
     - x86_64 cpu
- - basic linux shell knowledge
-    - (**COPYING COMMANDS WITHOUT UNDERSTANDING THEM CAN HARM YOUR COMPUTER!!!**)
- - basic understanding of how software, files, operating systems, and partitions work
-    - (**CHANGING SETTINGS EXPLAINED HERE WITHOUT PROPER UNDERSTANDING CAN HAMR YOUR COMPUTER!!!**)
+ - *basic* linux knowledge
+ - *basic* understanding of how software, files, operating systems, and partitions work
  - enough time
     - (you will NOT be able to use ANYTHING on your computer during some installation steps)
     - the whole installation process takes around 1 or 2 hours
