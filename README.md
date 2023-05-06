@@ -6,6 +6,8 @@
             - Finish writing
             - Add screenshots
                 - Windows 10 & 11
+                - WINDOWS RECOVERY UI
+                - BIOS/UEFI
         - `Step 2`
             - Finish writing
         - Finish writing & figuring out other steps
