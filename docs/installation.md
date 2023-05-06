@@ -1,10 +1,10 @@
 # Installing Arch
 
-Disclaimer for annoying "LiNuX VeTErAnS"/"ArCh BaD GEnToo BetTeR" people: I use Arch because I like it. I don't think it's the best, most perfect distro, I don't think a perfect distro exists in the first place. If a perfect distro existed, then there would be no need for other distros to exist. I know Arch isn't the most DIY-distro, I know many so-called "liNUx-VeTERaNs" use Gentoo or make their own distro from scratch and think "aRcH iS FoR bABiEs". But, either way, I use Arch, so I'm making a guide for Arch. Also, just because I don't use a distro, like Debian or Gentoo, doesn't mean I don't like it, it just means I prefer Arch because it's my opinoin. I still think Gentoo and Debian are super cool, I just like using Arch. If you have a problem with that, don't read this.
+**The current day is Friday, May 5th, 2023. THIS GUIDE WILL PROBABLY NOT WORK 5 OR 6 MONTHS AFTER MAY 2023, because Arch is a constantly changing distro. DO NOT FOLLOW THIS GUIDE IF MAY 2023 WAS MORE THAN 5 OR 6 MONTHS AGO!**
 
-Disclaimer for newbies: This guide is NOT for people who have never used Linux before. Arch requires a moderate amount of linux knowledge to install and use. If you're new to linux, I reccomend using Debian instead, it has it's own documentation and installer that explains how to install it, and is super easy!
+**I AM NOT RESPONSIBLE FOR YOU BREAKING YOUR COMPUTER BY FOLLOWING THIS GUIDE INCORRECTLY.**
 
-## Preperation
+## Step 0: Preperation
 
 You need
  - a USB drive
@@ -17,18 +17,15 @@ You need
     - at least 2GB RAM
     - x86_64 cpu
  - basic linux shell knowledge
-    - (COPYING COMMANDS WITHOUT UNDERSTANDING THEM CAN HARM YOUR COMPUTER!!!)
+    - (**COPYING COMMANDS WITHOUT UNDERSTANDING THEM CAN HARM YOUR COMPUTER!!!**)
  - basic understanding of how software, files, operating systems, and partitions work
-    - (DOING STUFF DETAILED HERE WITHOUT PROPER UNDERSTANDING CAN HAMR YOUR COMPUTER!!!)
+    - (**CHANGING SETTINGS EXPLAINED HERE WITHOUT PROPER UNDERSTANDING CAN HAMR YOUR COMPUTER!!!**)
  - enough time
-    - (you won't be able to use anything on your computer while installing Arch)
- - and also
-    - luck
-    - skill
-    - concentrated power of will
+    - (you will NOT be able to use ANYTHING on your computer during some installation steps)
+    - the whole installation process takes around 1 or 2 hours
 
-**The current day is Friday, May 5th, 2023. THIS GUIDE WILL PROBABLY NOT WORK 5 OR 6 MONTHS AFTER MAY 2023, because Arch is a constantly changing distro. DO NOT FOLLOW THIS GUIDE IF MAY 2023 WAS MORE THAN 5 OR 6 MONTHS AGO!**
+## Step 1: Partitioning disks & fixing the EFI partition
 
-**I AM NOT RESPONSIBLE FOR YOU BREAKING YOUR COMPUTER BY FOLLOWING THIS GUIDE INCORRECTLY.**
+This Arch Linux setup needs around 100MB-200MB in your EFI partition, however, *most* computers come with an EFI partition that is 100MB or less. (Windows does this cause they don't want you to have enough space to install anything other than Windows's bootloader...)
 
-## Step 1: Getting the ISO, flashing the USB drive, & tweaking boot options
+## Step 2: Getting the ISO, flashing the USB drive, & tweaking boot options
