@@ -7,6 +7,9 @@ bspc monitor -d I II III IV V VI VII VIII IX X
 #tempwallpaper
 feh --bg-fill ~/Pictures/blueishFaded1.png &
 
+#temppicom
+picom -f -b &
+
 #temptouchpadsettings
 xinput set-prop "SYNA32A9:00 06CB:CE17 Touchpad" "libinput Tapping Enabled" 1 &
 xinput set-prop "SYNA32A9:00 06CB:CE17 Touchpad" "libinput Natural Scrolling Enabled" 1 &&
