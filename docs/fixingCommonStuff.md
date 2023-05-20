@@ -24,7 +24,7 @@ GRUB_CMDLINE_LINUX_DEFAULT="SOMETHING SOMETHING i8042.dumbkbd=1"
 
 Now save the changes to your grub config.
 
-Now, to add these changes to your actual GRUB, run:
+Now, to add these changes to your actual GRUB, run (as superuser/root/sudo):
 (this assumes you followed `installation.md` to install arch with grub, if you didn't follow that guide, then your grub might be at a different path.)
 ```
 # grub-mkconfig -o /boot/grub/grub.cfg
