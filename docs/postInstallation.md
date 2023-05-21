@@ -35,8 +35,16 @@ Install `sof-firmware` & `alsa-firmware` (pacman)
 
 Install `pulseaudio` (pacman)
 
-I use ncpamixer, install `ncpamixer` (AUR)
+I use pacmixer, install `pacmixer` (AUR) if you want ig
 
 Reboot before testing, so that changes are applied!
 
 I didn't need to do any extra configuration, I just installed the packages and they work!
+
+## Bluetooth
+
+I just followed the arch wiki: https://wiki.archlinux.org/title/bluetooth
+
+I installed `bluez` (pacman), then `bluez-utils` (pacman), then enabled `bluetooth.service` (systemctl/systemd) (using `# systemctl enable bluetooth.service` and/or `# systemctl start bluetooth.service`)
+
+I also installed `bluetuith` (AUR) cause its cool ig
