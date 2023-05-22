@@ -41,6 +41,8 @@ Reboot before testing, so that changes are applied!
 
 I didn't need to do any extra configuration, I just installed the packages and they work!
 
+I also use `cava` (AUR) for cool sound-visualization-effect-terminal-thing, it has nothing to do with actually playing sound, its just a fancy cool-looking audio visualizer thing.
+
 For bluetooth sound stuff, see the `Bluetooth` section (its litterally right under this)
 
 ## Bluetooth
