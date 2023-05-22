@@ -41,6 +41,8 @@ Reboot before testing, so that changes are applied!
 
 I didn't need to do any extra configuration, I just installed the packages and they work!
 
+For bluetooth sound stuff, see the `Bluetooth` section (its litterally right under this)
+
 ## Bluetooth
 
 I just followed the arch wiki: https://wiki.archlinux.org/title/bluetooth
@@ -48,3 +50,5 @@ I just followed the arch wiki: https://wiki.archlinux.org/title/bluetooth
 I installed `bluez` (pacman), then `bluez-utils` (pacman), then enabled `bluetooth.service` (systemctl/systemd) (using `# systemctl enable bluetooth.service` and/or `# systemctl start bluetooth.service`)
 
 I also installed `bluetuith` (AUR) cause its cool ig
+
+For audio to work with bluetooth, install `pulseaudio-bluetooth` (pacman)
