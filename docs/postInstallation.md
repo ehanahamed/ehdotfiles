@@ -35,7 +35,7 @@ Install `sof-firmware` & `alsa-firmware` (pacman)
 
 Install `pulseaudio` (pacman)
 
-I use pacmixer, install `pacmixer` (AUR) if you want ig
+I use pulsemixer, install `pulsemixer` (pacman) if you want ig
 
 Reboot before testing, so that changes are applied!
 
