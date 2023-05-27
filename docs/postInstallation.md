@@ -54,3 +54,13 @@ I installed `bluez` (pacman), then `bluez-utils` (pacman), then enabled `bluetoo
 I also installed `bluetuith` (AUR) cause its cool ig
 
 For audio to work with bluetooth, install `pulseaudio-bluetooth` (pacman)
+
+## Keyboard layout
+
+check `/usr/share/X11/xkb/rules/base.lst` for a list of layouts.
+
+Then use `setxkbmap -model MODEL -layout LAYOUT -variant VARIANT` to change layout.
+
+I added the `setxkbmap ...` line to my bspwm config, to auto-set my layout.
+
+I use `pc104` model with `us` layout and `alt-intl` variant.
