@@ -4,6 +4,9 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 
 bspc monitor -d I II III IV V VI VII VIII IX X
 
+#keyboard
+setxkbmap -model pc104 -layout us -variant alt-intl
+
 #tempwallpaper
 feh --bg-fill ~/Pictures/blueishFaded1.png &
 
