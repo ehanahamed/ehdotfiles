@@ -63,6 +63,6 @@ Then use `setxkbmap -model MODEL -layout LAYOUT -variant VARIANT` to change layo
 
 I added the `setxkbmap ...` line to my bspwm config, to auto-set my layout.
 
-I use `pc104` model with `us` layout and `alt-intl` variant.
+I use `pc104` model with `us` layout and `altgr-intl` variant, cause it has all the useful symbols and extra characters, without annoying deadkeys!
 
 See archwiki for details: https://wiki.archlinux.org/title/Xorg/Keyboard_configuration
