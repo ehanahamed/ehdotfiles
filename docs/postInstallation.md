@@ -66,3 +66,9 @@ I added the `setxkbmap ...` line to my bspwm config, to auto-set my layout.
 I use `pc104` model with `us` layout and `altgr-intl` variant, cause it has all the useful symbols and extra characters, without annoying deadkeys!
 
 See archwiki for details: https://wiki.archlinux.org/title/Xorg/Keyboard_configuration
+
+## dbus-glib
+
+A bunch of stuff, like tor, depends on dbus-glib, but doesn't tell you. You should probably install it, its package is `dbus-glib` (pacman)
+
+Tor wasn't working for me, and gave no error, it just wouldn't start, then I checked the for-some-reason-hidden verbose option, which showed i needed `dbus-glib`, and installing it fixed it!
