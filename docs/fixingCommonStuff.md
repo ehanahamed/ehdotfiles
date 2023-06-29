@@ -41,3 +41,81 @@ Compositors are usually used to add extra effects, animations, and graphics to w
 Even though it sounds kinda ironic that a compositor would fix this, its because without a compositor or a re-parenting window manager, everything is "directly" rendered/displayed to your screen. With a compositor or reparting window manager, everything is "pre-rendered" offscreen then displayed onscreen. This actually completly fixes glitchy stuff for most people.
 
 I detailed how to install and setup compisotors in `compositors.md`
+
+## Emojis
+
+(See https://github.com/androlabs/emoji-archlinux)
+
+### Install Package font
+
+```sh
+$ sudo pacman -S noto-fonts-emoji
+```
+
+### Configure Emoji Font
+
+```sh
+$ cd ~/.config/fontconfig/ && ls
+```
+
+<hr>
+
+_Check if exists file_ `fonts.conf`
+
+* Case not exists
+
+```sh
+$ sudo touch fonts.conf
+```
+
+* Case exists
+
+```sh
+$ sudo nano fonts.conf
+```
+<hr>
+
+Insert in `fonts.conf`
+
+```xml
+<?xml version="1.0"?>
+<!DOCTYPE fontconfig SYSTEM "fonts.dtd">
+<fontconfig>
+ <alias>
+   <family>sans-serif</family>
+   <prefer>
+     <family>Noto Sans</family>
+     <family>Noto Color Emoji</family>
+     <family>Noto Emoji</family>
+     <family>DejaVu Sans</family>
+   </prefer> 
+ </alias>
+
+ <alias>
+   <family>serif</family>
+   <prefer>
+     <family>Noto Serif</family>
+     <family>Noto Color Emoji</family>
+     <family>Noto Emoji</family>
+     <family>DejaVu Serif</family>
+   </prefer>
+ </alias>
+
+ <alias>
+  <family>monospace</family>
+  <prefer>
+    <family>Noto Mono</family>
+    <family>Noto Color Emoji</family>
+    <family>Noto Emoji</family>
+   </prefer>
+ </alias>
+</fontconfig>
+```
+
+## Other languages
+
+work in progress
+
+so far:
+
+installed noto-sans-cjk font and did stuff so far
