@@ -57,6 +57,10 @@ For audio to work with bluetooth, install `pulseaudio-bluetooth` (pacman)
 
 ## Keyboard layout
 
+use kde's keyboard settings for layouts & super key & disabling certain keys etc
+
+OR
+
 check `/usr/share/X11/xkb/rules/base.lst` for a list of layouts.
 
 Then use `setxkbmap -model MODEL -layout LAYOUT -variant VARIANT` to change layout.
