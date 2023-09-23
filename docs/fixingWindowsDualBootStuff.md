@@ -21,4 +21,4 @@ Obvously, this can be done through Windows's settings app, nothing else needs to
 
 ## Drives
 
-Is an NTFS partition on your drive saying it's "read-only"? this might be becau
+Is an NTFS partition on your drive saying it's "read-only"? this might be because you booted into windows, then booted to linux, without restarting. If you don't restart, and only poweroff, windows will break stuff.

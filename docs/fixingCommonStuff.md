@@ -40,8 +40,6 @@ Compositors are usually used to add extra effects, animations, and graphics to w
 
 Even though it sounds kinda ironic that a compositor would fix this, its because without a compositor or a re-parenting window manager, everything is "directly" rendered/displayed to your screen. With a compositor or reparting window manager, everything is "pre-rendered" offscreen then displayed onscreen. This actually completly fixes glitchy stuff for most people.
 
-I detailed how to install and setup compisotors in `compositors.md`
-
 ## Emojis
 
 (See https://github.com/androlabs/emoji-archlinux)
