@@ -7,3 +7,4 @@ cliphist - clipboard manager utiltiy
 wofi - menu/applauncher
 hyprshot - screenshot utility
 kitty - terminal
+polkit-dumb-agent-git - polkit agent
