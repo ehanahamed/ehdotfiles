@@ -7,7 +7,7 @@ All of these are from arch's repositories through `pacman`, or from the `aur`
  - `hyprland` - wm
  - `hyprpaper` - wallpaper utility
  - `kitty` - terminal
- - `wofi` - menu & launcher
+ - `tofi` - menu & launcher
  - `hyprshot` - screenshot utility
  - `polkit-dumb-agent-git` - polkit agent
  - `dunst` - notifications
