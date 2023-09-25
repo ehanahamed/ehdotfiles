@@ -10,6 +10,7 @@ All of these are from arch's repositories through `pacman`, or from the `aur`
  - `hyprpaper` - wallpaper utility
  - `kitty` - terminal
  - `tofi` - menu & launcher
+   - see [`~/.config/tofi/config`](./home/ehan/.config/tofi/config)
  - `hyprshot` - screenshot utility
  - `polkit-dumb-agent-git` - polkit agent
  - `dunst` - notifications
