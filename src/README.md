@@ -13,6 +13,7 @@ All of these are from arch's repositories through `pacman`, or from the `aur`
  - `dunst` - notifications
  - `wev` - test/debug keybinds & stuff
  - `brightnessctl` - screen brightness
+ - `ly` - [display manager](./dm.md)
 
 ## Audio
 
