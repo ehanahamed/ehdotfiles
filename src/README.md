@@ -5,6 +5,8 @@ All of these are from arch's repositories through `pacman`, or from the `aur`
 ## Window Manager & Stuff
 
  - `hyprland` - wm
+ - `xdg-desktop-portal-hyprland` - xdg stuff
+ - `xdg-desktop-portal-wlr` - xdg stuff
  - `hyprpaper` - wallpaper utility
  - `kitty` - terminal
  - `tofi` - menu & launcher
@@ -27,3 +29,9 @@ All of these are from arch's repositories through `pacman`, or from the `aur`
 
  - `cava` - audio visualizer (for asthetics)
  - `cliphist` - clipboard manager
+
+## gtk & other disgusting bloatware
+
+ - `gnome-themes-extra` - 🤮 needed for gtk to work
+ - `catppuccin-gtk-theme-mocha` - doesn't make gtk less disgusting, but makes it hurt less
+   - See https://github.com/catppuccin/gtk#readme
