@@ -30,6 +30,8 @@ All of these are from arch's repositories through `pacman`, or from the `aur`
 
  - `cava` - audio visualizer (for asthetics)
  - `cliphist` - clipboard manager
+ - `pick` - fuzzy search tool
+   - can be used to search through a command that outputs lots of lines, like `commandThatReturnsLargeList | pick`
 
 ## gtk & other disgusting bloatware
 
