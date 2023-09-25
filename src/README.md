@@ -12,11 +12,22 @@ All of these are from arch's repositories through `pacman`, or from the `aur`
  - `tofi` - menu & launcher
    - see [`~/.config/tofi/config`](./home/ehan/.config/tofi/config)
  - `hyprshot` - screenshot utility
- - `polkit-dumb-agent-git` - polkit agent
  - `dunst` - notifications
  - `wev` - test/debug keybinds & stuff
  - `brightnessctl` - screen brightness
  - `ly` - [display manager](./dm.md)
+
+## Permissions, polkit, keyring, etc
+
+ - `polkit-gnome` - polkit agent
+   - polkit-gnome is started manually as an `exec-once` in `hyprland.conf`
+ - `libsecret` - keyring thingy
+ - `gnome-keyring` - keyring thingy
+   - see https://wiki.archlinux.org/title/GNOME/Keyring#PAM_step
+     - after installing `libsecret` and `gnome-keyring`, you need to add `auth optional pam_gnome_keyring.so` at the end of the `auth` section and `session optional pam_gnome_keyring.so auto_start` at the end of the `session` section in `/etc/pam.d/login`
+   - see [`https://wiki.archlinux.org/title/GNOME/Keyring#Launching_gnome-keyring-daemon_outside_desktop_environments_(KDE,_GNOME,_XFCE,_...)`](https://wiki.archlinux.org/title/GNOME/Keyring#Launching_gnome-keyring-daemon_outside_desktop_environments_(KDE,_GNOME,_XFCE,_...))
+     - I added `dbus-update-activation-environment --all` and `gnome-keyring-daemon --start --components=secrets` as `exec-once`s in my `hyprland.conf`
+ - `seahorse` - gui for keyring thingy
 
 ## Audio
 
