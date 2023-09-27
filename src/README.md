@@ -14,7 +14,7 @@ All of these are from arch's repositories through `pacman`, or from the `aur`
  - `hyprshot` - screenshot utility
  - `dunst` - notifications
  - `wev` - test/debug keybinds & stuff
- - `brightnessctl` - screen brightness
+ - `brightnessctl-git` - screen brightness (aur git version has new features required by this rice)
  - `ly` - [display manager](./dm.md)
 
 ## Permissions, polkit, keyring, etc
