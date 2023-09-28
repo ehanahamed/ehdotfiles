@@ -14,7 +14,7 @@
   transparency = 0
   layer = overlay
   corner_radius = 10
-  frame_width = 2
+  frame_width = 6
   # font & fontsize
   font = Monospace 12
 
