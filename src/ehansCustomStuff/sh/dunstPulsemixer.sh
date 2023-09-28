@@ -1,7 +1,10 @@
 #! /bin/bash
 
-# volumeraw will have a left and right value for the current speaker,
-# getting the 0th of the array gives us just one of the sides
+# Will get the current speaker's volume, no extra setup needed for headphones, bluetooth speakers, etc
 volumeraw=$(pulsemixer --get-volume)
 volume=${volumeraw%% *}
-notify-send -u low -t 600 -h int:value:$volume "Volume: $volume%" "Mute: $(pulsemixer --get-mute)"
+if [ $(pulsemixer --get-mute) == 1 ]; then
+  notify-send -u low -t 600 -h int:value:$volume "Volume: $volume%" "(muted)"
+else
+  notify-send -u low -t 600 -h int:value:$volume "Volume: $volume%" "(UNMUTED)"
+fi

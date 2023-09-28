@@ -1,8 +1,31 @@
-# Packages
+## Cool stuff
+
+ - [`dunstBrightnessctl.sh`](./ehansCustomStuff/sh/dunstBrightnessctl.sh)
+   - Dependencies
+     - `dunst`
+     - `brightnessctl-git` (AUR git version needed because of its newer features like the `-P` flag)
+     - `libnotify` (provides `notify-send` command)
+ - [`dunstPulsemixer.sh`](./ehansCustomStuff/sh/dunstPulsemixer.sh)
+   - Dependencies
+     - `dunst`
+     - `pulsemixer`
+     - `libnotify` (provides `notify-send` command)
+ - [`tofiHyprshot.sh`](./ehansCustomStuff/sh/tofiHyprshot.sh)
+   - Dependencies
+     - `tofi`
+     - `hyprshot`
+ - clipboard manager using tofi & cliphist
+   - Code is in [`hyprland.conf`](./home/ehan/.config/hypr/hyprland.conf)
+     - Search for `bind = SUPER, C...`
+   - Dependencies
+     - `tofi`
+     - `cliphist` 
+
+## Packages
 
 All of these are from arch's repositories through `pacman`, or from the `aur`
 
-## Window Manager & Stuff
+### Window Manager & Stuff
 
  - `hyprland` - wm
  - `xdg-desktop-portal-hyprland` - xdg stuff
@@ -17,7 +40,7 @@ All of these are from arch's repositories through `pacman`, or from the `aur`
  - `brightnessctl-git` - screen brightness (aur git version has new features required by this rice)
  - `ly` - [display manager](./dm.md)
 
-## Permissions, polkit, keyring, etc
+### Permissions, polkit, keyring, etc
 
  - `polkit-gnome` - polkit agent
    - polkit-gnome is started manually as an `exec-once` in `hyprland.conf`
@@ -29,7 +52,7 @@ All of these are from arch's repositories through `pacman`, or from the `aur`
      - I added `dbus-update-activation-environment --all` and `gnome-keyring-daemon --start --components=secrets` as `exec-once`s in my `hyprland.conf`
  - `seahorse` - gui for keyring thingy
 
-## Audio
+### Audio
 
  - `pipewire` - [audio & stuff](./audio.md)
  - `wireplumber` - [audio & stuff](./audio.md)
@@ -37,21 +60,21 @@ All of these are from arch's repositories through `pacman`, or from the `aur`
  - `pipewire-pulse` - [audio & stuff](./audio.md)
  - `pulsemixer` - volume control
 
-## Extra stuff
+### Extra stuff
 
  - `cava` - audio visualizer (for asthetics)
  - `cliphist` - clipboard manager
  - `pick` - fuzzy search tool
    - can be used to search through a command that outputs lots of lines, like `commandThatReturnsLargeList | pick`
 
-## gtk & other disgusting bloatware
+### gtk & stuff
 
- - `gnome-themes-extra` - 🤮 needed for gtk to work
- - `catppuccin-gtk-theme-mocha` - doesn't make gtk less disgusting, but makes it hurt less
+ - `gnome-themes-extra` - needed for gtk themes to work
+ - `catppuccin-gtk-theme-mocha` - gtk theme
    - See https://github.com/catppuccin/gtk#readme
    - See [`~/.config/hypr/hyprland.conf`](./home/ehan/.config/hypr/hyprland.conf)
 
-## Theming the virtual console
+### Theming the virtual console (terminal before login, during boot)
 
  - `mkinitcpio-colors-git`
    - see [`/etc/mkinitcpio.conf`](./etc/mkinitcpio.conf)
