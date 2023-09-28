@@ -1,0 +1,40 @@
+[global]
+  # show on main monitor
+  monitor = 0
+  follow = none
+  origin = top-center
+  # offset 0 horizontal (left or right)
+  # and 40 vertical (up or down)
+  offset = 0x40
+  scale = 0
+  progress_bar = true
+  progress_bar_height = 12
+  progress_bar_corner_radius = 4
+  icon_corner_radius = 4
+  transparency = 0
+  layer = overlay
+  corner_radius = 10
+  frame_width = 2
+  # font & fontsize
+  font = Monospace 12
+
+[urgency_low]
+  background = "#1e1e32"
+  foreground = "#a3a3cc"
+  frame_color = "#3d3d66"
+  # highlight is also progress bar
+  highlight = "#7a52cc"
+
+[urgency_normal]
+  background = "#1e1e32"
+  foreground = "#a3a3cc"
+  frame_color = "#a3a3cc"
+  # highlight is also progress bar
+  highlight = "#7a52cc"
+
+[urgency_critical]
+  background = "#1e1e32"
+  foreground = "#ff6666"
+  frame_color = "#ff6666"
+  # highlight is also progress bar
+  highlight = "#ff6666"
