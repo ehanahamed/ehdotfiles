@@ -41,6 +41,7 @@ All of these are from arch's repositories through `pacman`, or from the `aur`
  - `wev` - test/debug keybinds & stuff
  - `brightnessctl-git` - screen brightness (aur git version has new features required by this rice)
  - `ly` - [display manager](./src/dm.md)
+ - `waybar` - bar, config & css under `~/.config/waybar`
 
 ### Permissions, polkit, keyring, etc
 
