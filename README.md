@@ -37,7 +37,7 @@ All of these are from arch's repositories through `pacman`, or from the `aur`
  - `tofi` - menu & launcher
    - see [`~/.config/tofi/config`](./src/home/ehan/.config/tofi/config)
  - `hyprshot` - screenshot utility
- - `dunst` - notifications
+ - `swaync` - notifications
  - `wev` - test/debug keybinds & stuff
  - `brightnessctl-git` - screen brightness (aur git version has new features required by this rice)
  - `ly` - [display manager](./src/dm.md)

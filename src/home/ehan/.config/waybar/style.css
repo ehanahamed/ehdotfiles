@@ -105,7 +105,7 @@ button {
 #memory,
 #cpu,
 #backlight,
-#custom-bottom,
+#custom-swaync,
 #battery {
     padding: 8px 16px;
     color: #1e1e32;
@@ -136,6 +136,6 @@ button {
     background-color: #527ACC;
 }
 
-#custom-bottom {
+#custom-swaync {
     background-color: #7a52cc;
 }
