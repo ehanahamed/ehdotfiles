@@ -1,7 +1,5 @@
 #! /bin/bash
 
-# First clear old notifications
-dunstctl close-all
 # Will get the current speaker's volume, no extra setup needed for headphones, bluetooth speakers, etc
 volumeraw=$(pulsemixer --get-volume)
 volume=${volumeraw%% *}

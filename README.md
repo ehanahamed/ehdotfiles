@@ -2,14 +2,12 @@
 
 ## Custom stuff
 
- - [`dunstBrightnessctl.sh`](./src/ehansCustomStuff/sh/dunstBrightnessctl.sh)
+ - [`brightnessctlNotify.sh`](./src/ehansCustomStuff/sh/brightnessctlNotify.sh)
    - Dependencies
-     - `dunst`
      - `brightnessctl-git` (AUR git version needed because of its newer features like the `-P` flag)
      - `libnotify` (provides `notify-send` command)
- - [`dunstPulsemixer.sh`](./src/ehansCustomStuff/sh/dunstPulsemixer.sh)
+ - [`pulsemixerNotify.sh`](./src/ehansCustomStuff/sh/pulsemixerNotify.sh)
    - Dependencies
-     - `dunst`
      - `pulsemixer`
      - `libnotify` (provides `notify-send` command)
  - [`tofiHyprshot.sh`](./src/ehansCustomStuff/sh/tofiHyprshot.sh)
@@ -39,7 +37,7 @@ All of these are from arch's repositories through `pacman`, or from the `aur`
  - `hyprshot` - screenshot utility
  - `swaync` - notifications
  - `wev` - test/debug keybinds & stuff
- - `brightnessctl-git` - screen brightness (aur git version has new features required by this rice)
+ - `brightnessctl-git` - screen brightness (aur `-git`` version has new features required by this rice)
  - `ly` - [display manager](./src/dm.md)
  - `waybar` - bar, config & css under `~/.config/waybar`
 
