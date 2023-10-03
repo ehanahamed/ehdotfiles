@@ -68,14 +68,17 @@
             "critical-threshold": 80,
             // "format-critical": "{temperatureC}°C {icon}",
             "format": "{temperatureC}°C ({temperatureF}°F)",
+            "on-click": "kitty btm",
             "tooltip": false
         },
         "memory": {
             "format": "{}% RAM",
+            "on-click": "kitty btm",
             "tooltip": false
         },
         "cpu": {
             "format": "{usage}% CPU",
+            "on-click": "kitty btm",
             "tooltip": false
         },
         "backlight": {
