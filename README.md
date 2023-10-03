@@ -69,11 +69,15 @@ All of these are from arch's repositories through `pacman`, or from the `aur`
    - can be used to search through a command that outputs lots of lines, like `commandThatReturnsLargeList | pick`
 
 ### gtk & stuff
-
+ - `lxappearance` - super useful
  - `gnome-themes-extra` - needed for gtk themes to work
- - `catppuccin-gtk-theme-mocha` - gtk theme
-   - See https://github.com/catppuccin/gtk#readme
-   - See [`~/.config/hypr/hyprland.conf`](./src/home/ehan/.config/hypr/hyprland.conf)
+ - `flat-remix-gtk` - gtk theme
+   - I use `Flat-Remix-GTK-Violet-Dark`, all of them are in the same package
+   - I set this using `lxappearance` & `$GTK_THEME` variable, see [`~/.config/hypr/hyprland.conf`](./src/home/ehan/.config/hypr/hyprland.conf)
+     - Some line has `env = GTK_THEME...`
+ - `flat-remix` - icon theme
+   - I use `Flat-Remix-Violet-Dark`, all of them are in the same package
+   - I set the icon theme using `lxappearance`
 
 ### Theming the virtual console (terminal before login, during boot)
 
