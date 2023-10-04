@@ -67,6 +67,8 @@ All of these are from arch's repositories through `pacman`, or from the `aur`
  - `cliphist` - clipboard manager
  - `pick` - fuzzy search tool
    - can be used to search through a command that outputs lots of lines, like `commandThatReturnsLargeList | pick`
+ - `nemo` - the only gui file manager that doesn't suck
+ - `nemo-fileroller` - useful stuff for nemo
 
 ### gtk & stuff
  - `lxappearance` - super useful
