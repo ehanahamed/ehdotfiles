@@ -1,29 +1,21 @@
 # Ehan's dotfiles
 
-## Custom stuff
+## Custom scripts
 
- - [`brightnessctlNotify.sh`](./src/ehansCustomStuff/sh/brightnessctlNotify.sh)
-   - Dependencies
-     - `brightnessctl-git` (AUR git version needed because of its newer features like the `-P` flag)
-     - `libnotify` (provides `notify-send` command)
- - [`pulsemixerNotify.sh`](./src/ehansCustomStuff/sh/pulsemixerNotify.sh)
-   - Dependencies
-     - `pulsemixer`
-     - `libnotify` (provides `notify-send` command)
  - [`tofiHyprshot.sh`](./src/ehansCustomStuff/sh/tofiHyprshot.sh)
    - Dependencies
-     - `tofi`
-     - `hyprshot`
- - clipboard manager using tofi & cliphist
-   - Code is in [`hyprland.conf`](./src/home/ehan/.config/hypr/hyprland.conf)
-     - Search for `bind = SUPER, C...`
+     - `tofi` (AUR)
+     - `hyprshot` (AUR)
+ - [`tofiCliphist.sh`](./src/ehansCustomStuff/sh/tofiCliphist.sh)
    - Dependencies
-     - `tofi`
+     - `tofi` (AUR)
      - `cliphist` 
 
 ## Packages
 
-All of these are from arch's repositories through `pacman`, or from the `aur`
+All of these are from arch's repositories through or from the `aur`. 
+
+I use `yay` to easily install aur packages.
 
 ### Window Manager & Stuff
 
@@ -32,12 +24,12 @@ All of these are from arch's repositories through `pacman`, or from the `aur`
  - `xdg-desktop-portal-wlr` - xdg stuff
  - `hyprpaper` - wallpaper utility
  - `kitty` - terminal
- - `tofi` - menu & launcher
+ - `tofi` (AUR) - menu & launcher
    - see [`~/.config/tofi/config`](./src/home/ehan/.config/tofi/config)
- - `hyprshot` - screenshot utility
- - `swaync` - notifications
- - `wev` - test/debug keybinds & stuff
- - `brightnessctl-git` - screen brightness (aur `-git`` version has new features required by this rice)
+ - `hyprshot` (AUR) - screenshot utility
+ - `swaync` (AUR) - notifications
+ - `wev` (AUR) - test/debug keybinds & stuff
+ - `brightnessctl-git` (AUR) - screen brightness (aur `-git`` version has new features required by this rice)
  - `ly` - [display manager](./src/dm.md)
  - `waybar` - bar, config & css under `~/.config/waybar`
 
@@ -59,13 +51,14 @@ All of these are from arch's repositories through `pacman`, or from the `aur`
  - `wireplumber` - [audio & stuff](./src/audio.md)
  - `pipewire-audio` - [audio & stuff](./src/audio.md)
  - `pipewire-pulse` - [audio & stuff](./src/audio.md)
- - `pulsemixer` - volume control
+ - `pulsemixer` - volume control tui
+ - `pamixer` - needed for `avizo` to work
 
 ### Extra stuff
 
- - `cava` - audio visualizer (for asthetics)
+ - `cava` (AUR) - audio visualizer (for asthetics)
  - `cliphist` - clipboard manager
- - `pick` - fuzzy search tool
+ - `pick` (AUR) - fuzzy search tool
    - can be used to search through a command that outputs lots of lines, like `commandThatReturnsLargeList | pick`
  - `nemo` - the only gui file manager that doesn't suck
  - `nemo-fileroller` - useful stuff for nemo
@@ -73,20 +66,26 @@ All of these are from arch's repositories through `pacman`, or from the `aur`
 ### gtk & stuff
  - `lxappearance` - super useful
  - `gnome-themes-extra` - needed for gtk themes to work
- - `flat-remix-gtk` - gtk theme
+ - `flat-remix-gtk` (AUR) - gtk theme
    - I use `Flat-Remix-GTK-Violet-Dark`, all of them are in the same package
    - I set this using `lxappearance` & `$GTK_THEME` variable, see [`~/.config/hypr/hyprland.conf`](./src/home/ehan/.config/hypr/hyprland.conf)
      - Some line has `env = GTK_THEME...`
- - `flat-remix` - icon theme
+ - `flat-remix` (AUR) - icon theme
    - I use `Flat-Remix-Violet-Dark`, all of them are in the same package
    - I set the icon theme using `lxappearance`
 
 ### Theming the virtual console (terminal before login, during boot)
 
- - `mkinitcpio-colors-git`
+ - `mkinitcpio-colors-git` (AUR)
    - see [`/etc/mkinitcpio.conf`](./src/etc/mkinitcpio.conf)
      - "runs" `mkinitcpio-colors` to set colors
    - see [`/etc/mkinitcpio.conf.md`](./src/etc/mkinitcpio.conf.md)
    - see https://github.com/evanpurkhiser/mkinitcpio-colors
    - see [`etc/vconsole.conf`](./src/etc/vconsole.conf)
      - defines the colors to use
+
+### OSD, like volume/brightness indicator and stuff
+
+ - `avizo` (AUR) - on screen display for multimedia keys and stuff
+   - provides `volumectl` and `lightctl` commands, which are binded to corresponding keys in `hyprland.conf`
+   - requires `pamixer`, `brightnessctl-git` (AUR), and `pactl`
