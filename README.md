@@ -92,6 +92,6 @@ I use `yay` to easily install aur packages.
 
 ### Fonts
 
- - `otf-overpass-nerd` - overpass nerd font
-   - overpass font is a fully open source font, it's also super readable
-   - I use Overpass Mono, it's font name from this package is `OverpassM Nerd Font`
+ - `ttf-iosevka-nerd`
+ - `ttf-iosevkaterm-nerd`
+ - `ttc-iosevka`
