@@ -89,3 +89,9 @@ I use `yay` to easily install aur packages.
  - `avizo` (AUR) - on screen display for multimedia keys and stuff
    - provides `volumectl` and `lightctl` commands, which are binded to corresponding keys in `hyprland.conf`
    - requires `pamixer`, `brightnessctl-git` (AUR), and `pactl`
+
+### Fonts
+
+ - `otf-overpass-nerd` - overpass nerd font
+   - overpass font is a fully open source font, it's also super readable
+   - I use Overpass Mono, it's font name from this package is `OverpassM Nerd Font`
