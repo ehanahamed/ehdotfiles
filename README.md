@@ -10,6 +10,18 @@
    - Dependencies
      - `tofi` (AUR)
      - `cliphist` 
+ - [`avizoVolumectl`](./src/ehansCustomStuff/sh/avizoVolumectl.sh)
+   - Custom modification of volumectl from https://github.com/misterdanb/avizo
+     - My version uses custom images, see [`osd.md`](./docs/configuringStuff/osd.md)
+   - Dependencies
+     - `pamixer`
+     - `pactl`
+ - [`avizoLightctl`](./src/ehansCustomStuff/sh/avizoLightctl.sh)
+   - Custom modification of lightctl from https://github.com/misterdanb/avizo
+     - My version uses custom images, see [`osd.md`](./docs/configuringStuff/osd.md)
+   - Dependencies
+     - `brightnessctl-git` (AUR)
+       - I use AUR version because it has new features needed by other scripts (like Waybar)
 
 ## Packages
 
@@ -87,7 +99,6 @@ I use `yay` to easily install aur packages.
 ### OSD, like volume/brightness indicator and stuff
 
  - `avizo` (AUR) - on screen display for multimedia keys and stuff
-   - provides `volumectl` and `lightctl` commands, which are binded to corresponding keys in `hyprland.conf`
    - requires `pamixer`, `brightnessctl-git` (AUR), and `pactl`
 
 ### Fonts
