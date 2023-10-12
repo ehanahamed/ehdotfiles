@@ -29,6 +29,10 @@ All of these are from arch's repositories through or from the `aur`.
 
 I use `yay` to easily install aur packages.
 
+### Important-ish stuff
+ - `networkmanager` - network stuff, provides `nmcli` and `nmtui`
+ - `ly` - [display manager](./src/dm.md)
+
 ### Window Manager & Stuff
 
  - `hyprland` - wm
@@ -42,7 +46,6 @@ I use `yay` to easily install aur packages.
  - `swaync` (AUR) - notifications
  - `wev` (AUR) - test/debug keybinds & stuff
  - `brightnessctl-git` (AUR) - screen brightness (aur `-git`` version has new features required by this rice)
- - `ly` - [display manager](./src/dm.md)
  - `waybar` - bar, config & css under `~/.config/waybar`
 
 ### Permissions, polkit, keyring, etc
