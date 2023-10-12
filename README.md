@@ -47,6 +47,7 @@ I use `yay` to easily install aur packages.
  - `wev` (AUR) - test/debug keybinds & stuff
  - `brightnessctl-git` (AUR) - screen brightness (aur `-git`` version has new features required by this rice)
  - `waybar` - bar, config & css under `~/.config/waybar`
+ - `blueman` - bluetooth gui
 
 ### Permissions, polkit, keyring, etc
 
