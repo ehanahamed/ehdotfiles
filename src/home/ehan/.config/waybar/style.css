@@ -54,31 +54,13 @@ button {
     margin-right: 0;
 }
 
-/* battery */
-
-#battery {
-    color: #a3a3cc;
-}
-
-#battery.charging, #battery.plugged {
-    color: #52CCA3;
-}
-
-#battery.warning:not(.charging) {
-    color: #ff6666;
-}
-
-#battery.critical:not(.charging) {
-    color: #ff6666;
-    font-weight: bold;
-}
-
 #pulseaudio,
 #temperature,
 #memory,
 #cpu,
 #backlight,
 #custom-swaync,
+#network,
 #battery {
     padding: 6px 12px;
 }
@@ -109,4 +91,29 @@ button {
 
 #custom-swaync {
     color: #7a52cc;
+}
+
+#network {
+    color: #52CCA3;
+}
+
+#network.disconnected {
+    color: #ff6666;
+}
+
+#battery {
+    color: #a3a3cc;
+}
+
+#battery.charging, #battery.plugged {
+    color: #52CCA3;
+}
+
+#battery.warning:not(.charging) {
+    color: #ff6666;
+}
+
+#battery.critical:not(.charging) {
+    color: #ff6666;
+    font-weight: bold;
 }
