@@ -5,6 +5,7 @@
         "position": "bottom",
         "height": 40,
         "spacing": 4,
+        "modules-left": ["custom/tofi"]
         "modules-center": ["hyprland/window"],
         "modules-right": ["battery"],
         // Modules configuration
@@ -105,6 +106,11 @@
             "on-click": "swaync-client -t -sw",
             "on-click-right": "swaync-client -d -sw",
             "escape": true
+        },
+        "custom/tofi": {
+            "tooltip": false,
+            "format": "󰀻",
+            "on-click": 'tofi-drun --prompt-text "Launch: " --drun-launch true'
         }
     }
 ]
