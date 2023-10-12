@@ -7,11 +7,22 @@
         "spacing": 4,
         "modules-left": ["custom/tofi"]
         "modules-center": ["hyprland/window"],
-        "modules-right": ["battery"],
+        "modules-right": ["network", "battery"],
         // Modules configuration
         "hyprland/window": {
             "max-length": 200,
             "separate-outputs": false
+        },
+        "network": {
+            // "interface": "wlp2*", // (Optional) To force the use of this interface
+            "tooltip": false,
+            "format-wifi": " {essid} ({signalStrength}%)",
+            "format-ethernet": " {ipaddr}/{cidr}",
+            // "tooltip-format": " {ifname} via {gwaddr}",
+            "format-linked": " {ifname} (No IP)",
+            "format-disconnected": " Disconnected",
+            "format-alt": "{ifname}: {ipaddr}/{cidr}"
+            "on-click": "kitty nmtui"
         },
         "battery": {
             "states": {
