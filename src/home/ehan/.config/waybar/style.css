@@ -18,13 +18,6 @@ button {
     border-radius: 0px;
 }
 
-#custom-logo {
-    color: #52A3CC; /* purpleish CYAN (not blue) */
-    padding: 2px 12px;
-    padding-right: 0px;
-    font-size: 22px
-}
-
 /* workspaces */
 
 #workspaces button {
@@ -94,8 +87,8 @@ button {
     color: #7a52cc;
 }
 
-#custom-tofi {
-    color: #7a52cc;
+#custom-logo {
+    color: #52A3CC;
     padding: 0px 12px;
     font-size: 24px;
 }
