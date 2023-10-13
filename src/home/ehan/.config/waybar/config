@@ -21,12 +21,11 @@
         "network": {
             // "interface": "wlp2*", // (Optional) To force the use of this interface
             "tooltip": false,
-            "format-wifi": " {essid} ({signalStrength}%)",
-            "format-ethernet": " {ipaddr}/{cidr}",
+            "format-wifi": "  {essid} ({signalStrength}%)",
+            "format-ethernet": "󰈀  {ipaddr}/{cidr}",
             // "tooltip-format": " {ifname} via {gwaddr}",
-            "format-linked": " {ifname} (No IP)",
-            "format-disconnected": " Disconnected",
-            "format-alt": "{ifname}: {ipaddr}/{cidr}",
+            "format-linked": "  {ifname} (No IP)",
+            "format-disconnected": "  Disconnected",
             "on-click": "kitty nmtui"
         },
         "battery": {
@@ -37,11 +36,11 @@
             },
             "format": "{icon} {capacity}%",
             "format-charging": "󱐋 {capacity}%",
-            "format-plugged": " {capacity}%",
+            "format-plugged": "  {capacity}%",
             "format-alt": "{icon} {time}",
             // "format-good": "", // An empty format will hide the module
             // "format-full": "",
-            "format-icons": ["", "", "", "", ""],
+            "format-icons": [" ", " ", " ", " ", " "],
             "tooltip": false
         }
     },
@@ -52,10 +51,14 @@
         // "width": 1280, // Waybar width
         "spacing": 4, // Gaps between modules (4px)
         // Choose the order of the modules
-        "modules-left": ["hyprland/workspaces"],
+        "modules-left": ["custom/logo","hyprland/workspaces"],
         "modules-center": ["clock"],
         "modules-right": ["pulseaudio", "temperature", "memory", "cpu", "backlight", "custom/swaync"],
         // Modules configuration
+        "custom/logo": {
+            "tooltip": false,
+            "format": " "
+        },
         "hyprland/workspaces": {
             "disable-scroll": true,
             "all-outputs": true,
@@ -70,7 +73,7 @@
         },
         "pulseaudio": {
             // "scroll-step": 1, // %, can be a float
-            "format": " {volume}% {format_source}",
+            "format": "  {volume}% {format_source}",
             "format-bluetooth": "󰂯 {volume}% {format_source}",
             "format-bluetooth-muted": "󰂲 {format_source}",
             "format-muted": " {format_source}",
@@ -100,7 +103,7 @@
         },
         "backlight": {
             // "device": "acpi_video1",
-            "format": " {percent}%",
+            "format": "  {percent}%",
             "tooltip": false
         },
         "custom/swaync": {

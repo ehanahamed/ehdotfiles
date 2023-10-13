@@ -107,6 +107,5 @@ I use `yay` to easily install aur packages.
 
 ### Fonts
 
- - `ttf-iosevka-nerd`
- - `ttf-iosevkaterm-nerd`
- - `ttc-iosevka`
+ - `ttf-mononoki-nerd`
+ - `ttf-mononoki` (AUR)
