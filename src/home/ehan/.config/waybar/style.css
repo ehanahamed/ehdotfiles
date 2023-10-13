@@ -93,6 +93,12 @@ button {
     color: #7a52cc;
 }
 
+#custom-tofi {
+    color: #7a52cc;
+    padding: 0px 12px;
+    font-size: 24px;
+}
+
 #network {
     color: #52CCA3;
 }
