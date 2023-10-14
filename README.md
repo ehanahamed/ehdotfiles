@@ -107,5 +107,5 @@ I use `yay` to easily install aur packages.
 
 ### Fonts
 
- - `ttf-mononoki-nerd`
- - `ttf-mononoki` (AUR)
+ - `ttf-noto-nerd`
+   - I use `NotoSansM Nerd Font Propo` in waybar and other stuff
