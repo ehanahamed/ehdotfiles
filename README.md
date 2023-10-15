@@ -83,11 +83,11 @@ I use `yay` to easily install aur packages.
  - `lxappearance` - super useful
  - `gnome-themes-extra` - needed for gtk themes to work i think?
  - `catppuccin-gtk-theme-macchiato` (AUR) - gtk theme
-   - I use `Catppuccin-Macchiato-Standard-Lavender-Dark`
+   - I use `Catppuccin-Mocha-Standard-Lavender-Dark`
    - I set this using `lxappearance`, and setting the `$GTK_THEME` env variable in [`~/.config/hypr/hyprland.conf`](./src/home/ehan/.config/hypr/hyprland.conf)
      - Some line in my `hyprland.conf` has `env = GTK_THEME...`
  - `colloid-icon-theme-git` (AUR) - icon theme
-   - I set the icon theme using `lxappearance`
+   - I set the icon theme using `lxappearance` and by running `gsettings set org.gnome.desktop.interface icon-theme Colloid-dark`
 
 ### Theming the virtual console (terminal before login, during boot)
 
