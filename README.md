@@ -48,6 +48,7 @@ I use `yay` to easily install aur packages.
  - `brightnessctl-git` (AUR) - screen brightness (aur `-git`` version has new features required by this rice)
  - `waybar` - bar, config & css under `~/.config/waybar`
  - `blueman` - bluetooth gui
+ - `ags` - customizable widgets and stuff
 
 ### Permissions, polkit, keyring, etc
 
@@ -78,6 +79,7 @@ I use `yay` to easily install aur packages.
    - can be used to search through a command that outputs lots of lines, like `commandThatReturnsLargeList | pick`
  - `nemo` - the only gui file manager that doesn't suck
  - `nemo-fileroller` - useful stuff for nemo
+ - `starship` - shell prompt
 
 ### gtk & stuff
  - `lxappearance` - super useful
