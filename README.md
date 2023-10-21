@@ -46,7 +46,25 @@ I use `yay` to easily install aur packages.
  - `wev` (AUR) - test/debug keybinds & stuff
  - `brightnessctl-git` (AUR) - screen brightness (aur `-git`` version has new features required by this rice)
  - `blueman` - bluetooth gui
- - `ags` - widgets, notifications, status bar, osd, etc
+ - `aylurs-gtk-shell` (AUR) - (aka "ags") widgets, notifications, status bar, osd, etc
+   - dependencies (for the config, not ags itself)
+     - `sassc`
+     - `swww` (AUR)
+     - `hyprpicker` (AUR)
+     - `python-pam`
+   - I "stole" aylurs ags config (https://github.com/aylur/dotfiles)
+     - Their configs are a great example, they litterally made ags
+     - Changes I made so far:
+       - purpleish theme (`~/.config/ags/js/themes.js`)
+       - removed wallpaper-clock/desktop-clock
+         - `~/.config/ags/js/desktop/Desktop.js`
+         - `~/.config/ags/js/settingsdialog/SettingsDialog.js`
+       - made seperate `hypr_border_width`
+         - old `border_width` used to set ags css border and hyprland window borders
+         - now, `border_width` sets ags and `hypr_border_width` sets hyprland windows
+         - `~/.config/ags/js/themes.js`
+         - `~/.config/ags/js/services/hyprland.js`
+
 
 ### Permissions, polkit, keyring, etc
 

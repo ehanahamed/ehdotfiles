@@ -36,23 +36,6 @@ const DesktopClock = () => Widget.Box({
 const Desktop = () => Widget.EventBox({
     onSecondaryClick: (_, event) => DesktopMenu().popup_at_pointer(event),
     onMiddleClick: print,
-    child: Widget.Box({
-        vertical: true,
-        vexpand: true,
-        hexpand: true,
-        connections: [[Theme, box => {
-            const [halign = 'center', valign = 'center', offset = 64] =
-                Theme.getSetting('desktop_clock')?.split(' ') || [];
-
-            box.halign = halign;
-            box.valign = valign;
-            box.setStyle(`margin: ${Number(offset)}px;`);
-        }]],
-        children: [
-            DesktopClock(),
-            Clock({ format: '%B %e. %A', className: 'date' }),
-        ],
-    }),
 });
 
 export default monitor => Widget.Window({

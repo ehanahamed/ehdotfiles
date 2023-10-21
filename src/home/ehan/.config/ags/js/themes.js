@@ -7,17 +7,15 @@ const editScheme = (scheme, edit) => {
     return obj;
 };
 
-const gnome = {
-    red: '#f66151',
-    green: '#57e389',
-    yellow: '#f6d32d',
-    blue: '#62a0ea',
-    magenta: '#c061cb',
-    teal: '#5bc8aF',
-    orange: '#ffa348',
-};
-
-const charm = {
+// themes
+const kitty_dark = {
+    wallpaper: WP + 'kitty.jpeg',
+    name: 'kitty_dark',
+    icon: '󰄛',
+    color_scheme: 'dark',
+    bg_color: '#171717',
+    fg_color: '#eee',
+    hover_fg: '#f1f1f1',
     red: '#e55f86',
     green: '#00D787',
     yellow: '#EBFF71',
@@ -25,25 +23,6 @@ const charm = {
     magenta: '#9077e7',
     teal: '#51e6e6',
     orange: '#E79E64',
-};
-
-const dark = {
-    color_scheme: 'dark',
-    bg_color: '#171717',
-    fg_color: '#eee',
-    hover_fg: '#f1f1f1',
-    ...charm,
-};
-
-const light = {
-    color_scheme: 'light',
-    bg_color: '#fffffa',
-    fg_color: '#141414',
-    hover_fg: '#0a0a0a',
-    ...editScheme(gnome, c => `darken(${c}, 8%)`),
-};
-
-const misc = {
     wm_gaps: 22,
     radii: 9,
     spacing: 9,
@@ -53,13 +32,9 @@ const misc = {
     screen_corners: true,
     bar_style: 'normal',
     layout: 'topbar',
-    desktop_clock: 'center center',
     font: 'Ubuntu Nerd Font',
     mono_font: 'Mononoki Nerd Font',
     font_size: 16,
-};
-
-const colors = {
     wallpaper_fg: 'white',
     hypr_active_border: 'rgba(3f3f3fFF)',
     hypr_inactive_border: 'rgba(3f3f3fDD)',
@@ -71,117 +46,51 @@ const colors = {
     border_color: '$fg_color',
     border_opacity: 97,
     border_width: 1,
+    hypr_border_width: 1
 };
 
-// themes
-const kitty_dark = {
-    wallpaper: WP + 'kitty.jpeg',
-    name: 'kitty_dark',
-    icon: '󰄛',
-    ...dark,
-    ...misc,
-    ...colors,
-};
-
-const kitty_light = {
-    wallpaper: WP + 'kitty.jpeg',
-    name: 'kitty_light',
-    icon: '󰄛',
-    ...light,
-    ...misc,
-    ...colors,
-    widget_bg: '$accent',
-    widget_opacity: 84,
-};
-
-const leaves_dark = {
-    ...kitty_dark,
-    wallpaper: WP + 'leaves.jpg',
-    name: 'leaves_dark',
-    icon: '󰌪',
-    accent: '$green',
-    widget_opacity: 92,
-    active_gradient: 'to right, $accent, darken($accent, 14%)',
-    border_opacity: 86,
-    bg_color: 'transparentize(#171717, 0.3)',
-    hypr_active_border: 'rgba(57e389FF)',
-    bar_style: 'floating',
-    radii: 0,
+const purpleish = {
+    wallpaper: WP + 'purpleish.png',
+    name: 'purpleish',
+    icon: 'P',
+    color_scheme: 'dark',
+    bg_color: '#1e1e32',
+    fg_color: '#a3a3cc',
+    hover_fg: '#7a52cc',
+    red: '#ff6666',
+    green: '#52CCA3',
+    yellow: '#FFCC66',
+    blue: '#527ACC',
+    magenta: '#7a52cc',
+    teal: '#52CCCC',
+    orange: '#FF9966',
     wallpaper_fg: 'white',
-    additional_scss: `
-        window#quicksettings .quicksettings {
-            margin-right: $wm_gaps;
-        }
-    `,
-};
-
-const leaves_light = {
-    ...leaves_dark,
-    ...light,
-    name: 'leaves_light',
-    accent: 'darken($green, 10%)',
-    bg_color: 'transparentize(#fff, 0.1)',
-    active_gradient: 'to right, $accent, darken($accent, 6%)',
-};
-
-const ivory = {
-    wallpaper: WP + 'ivory.png',
-    name: 'ivory',
-    icon: '󰟆',
-    ...light,
-    ...misc,
-    ...colors,
-    bg_color: '#fffff0',
-    bar_style: 'separated',
-    widget_bg: '$accent',
-    widget_opacity: 64,
-    drop_shadow: false,
+    hypr_active_border: 'rgb(7a52cc)',
+    hypr_inactive_border: 'rgb(1e1e32)',
+    accent: '#7a52cc',
+    accent_fg: '#1e1e32',
+    widget_bg: '#5C5C99',
+    widget_opacity: 80,
+    active_gradient: 'to right, #7a52cc, #704bbb',
+    border_color: '$fg_color',
+    border_opacity: 100,
+    hypr_border_width: 8,
     border_width: 2,
-    border_opacity: 0,
-    active_gradient: 'to right, $accent, darken($accent, 6%)',
-    wallpaper_fg: '$bg_color',
-    hypr_active_border: 'rgba(111111FF)',
-    additional_scss: `
-        window#quicksettings .quicksettings,
-        window#dashboard .dashboard {
-            margin-top: 0;
-        }
-    `,
-};
-
-const cutefish = {
-    ...kitty_dark,
-    wallpaper: WP + 'cutefish.jpeg',
-    name: 'cutefish',
-    icon: '󰈺',
-    accent: 'lighten($blue, 20%)',
-    active_gradient: 'to right, $accent, lighten(mix($orange, $blue, 70%), 20%)',
-    border_opacity: 94,
-    brorder_width: 2,
-    radii: 9,
-    desktop_clock: 'end end',
-    hypr_active_border: 'rgba(3f3f3fFF)',
-    bg_color: 'transparentize(#171717, 0.3)',
-};
-
-const cherry = {
-    ...kitty_dark,
-    wallpaper: WP + 'cherry.png',
-    name: 'cherry',
-    icon: '',
-    accent: '$blue',
-    active_gradient: 'to right, $accent, lighten(mix($magenta, $blue, 70%), 18%)',
-    brorder_width: 2,
-    radii: 13,
-    bg_color: 'transparentize(#171717, 0.3)',
-};
+    wm_gaps: 20,
+    radii: 10,
+    spacing: 10,
+    shadow: 'transparent',
+    drop_shadow: false,
+    transition: 200,
+    screen_corners: true,
+    bar_style: 'normal',
+    layout: 'topbar',
+    font: 'NotoSans Nerd Font Propo',
+    mono_font: 'NotoSansM Nerd Font Propo',
+    font_size: 16,
+}
 
 export default [
     kitty_dark,
-    kitty_light,
-    leaves_dark,
-    leaves_light,
-    ivory,
-    cutefish,
-    cherry,
+    purpleish
 ];

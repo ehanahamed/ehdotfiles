@@ -4,7 +4,7 @@ const noAlphaignore = ['verification', 'powermenu', 'lockscreen'];
 
 export default function({
     wm_gaps,
-    border_width,
+    hypr_border_width,
     hypr_active_border,
     hypr_inactive_border,
     radii,
@@ -44,7 +44,7 @@ export default function({
             }
         });
 
-        Utils.execAsync(`hyprctl keyword general:border_size ${border_width}`);
+        Utils.execAsync(`hyprctl keyword general:border_size ${hypr_border_width}`);
         Utils.execAsync(`hyprctl keyword general:gaps_out ${wm_gaps}`);
         Utils.execAsync(`hyprctl keyword general:gaps_in ${wm_gaps / 2}`);
         Utils.execAsync(`hyprctl keyword general:col.active_border ${hypr_active_border}`);

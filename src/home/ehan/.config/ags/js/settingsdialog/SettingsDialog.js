@@ -237,7 +237,6 @@ export default () => Widget({
             Color('Shadow', 'shadow'),
             SwitchButton('Drop Shadow', 'drop_shadow'),
             SpinButton('Transition', 'transition', 1000),
-            Text('Desktop Clock Position', 'desktop_clock'),
             Color('Wallpaper Foreground Color', 'wallpaper_fg'),
             FontButton('Font', 'font'),
             FontButton('Mono Font', 'mono_font'),
