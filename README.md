@@ -43,12 +43,10 @@ I use `yay` to easily install aur packages.
  - `tofi` (AUR) - menu & launcher
    - see [`~/.config/tofi/config`](./src/home/ehan/.config/tofi/config)
  - `hyprshot` (AUR) - screenshot utility
- - `swaync` (AUR) - notifications
  - `wev` (AUR) - test/debug keybinds & stuff
  - `brightnessctl-git` (AUR) - screen brightness (aur `-git`` version has new features required by this rice)
- - `waybar` - bar, config & css under `~/.config/waybar`
  - `blueman` - bluetooth gui
- - `ags` - customizable widgets and stuff
+ - `ags` - widgets, notifications, status bar, osd, etc
 
 ### Permissions, polkit, keyring, etc
 
@@ -69,7 +67,7 @@ I use `yay` to easily install aur packages.
  - `pipewire-audio` - [audio & stuff](./src/audio.md)
  - `pipewire-pulse` - [audio & stuff](./src/audio.md)
  - `pulsemixer` - volume control tui
- - `pamixer` - needed for `avizo` to work
+ - `pamixer` - needed for `avizo` and `ags` to work
 
 ### Extra stuff
 
