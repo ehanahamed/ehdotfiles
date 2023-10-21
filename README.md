@@ -64,6 +64,14 @@ I use `yay` to easily install aur packages.
          - now, `border_width` sets ags and `hypr_border_width` sets hyprland windows
          - `~/.config/ags/js/themes.js`
          - `~/.config/ags/js/services/hyprland.js`
+       - changed dock functionality
+         - old dock would hide until mouse hovered over the bottom of the screen
+           - the old dock would overlay on top of windows, and would sometimes accidentally hide itself
+         - the new dock can be toggled through a button on the top-bar/status-bar
+           - the new dock takes up space, just like the top-bar/status-bar, and doesn't get re-hidden when un-hover-ed
+         - `~/.config/ags/js/bar/buttons/FocusedClient.js`
+         - `~/.config/ags/js/dock/FloatingDock.js`
+         
 
 
 ### Permissions, polkit, keyring, etc

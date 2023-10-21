@@ -30,18 +30,11 @@ export default {
     dock: {
         iconSize: 56,
         pinnedApps: [
-            'firefox',
-            'org.wezfurlong.wezterm',
-            'org.gnome.Nautilus',
-            'org.gnome.Calendar',
-            'obsidian',
-            'transmission-gtk',
-            'caprine',
-            'teams-for-linux',
+            'nemo',
+            'kitty',
+            'brave',
+            'code',
             'discord',
-            'spotify',
-            'com.usebottles.bottles',
-            'org.gnome.Software',
         ],
     },
 
