@@ -27,17 +27,6 @@ export default {
     // keyboard id for brightnessctl
     brightnessctlKBD: 'asus::kbd_backlight',
 
-    dock: {
-        iconSize: 56,
-        pinnedApps: [
-            'nemo',
-            'kitty',
-            'brave',
-            'code',
-            'discord',
-        ],
-    },
-
     substitutions: {
         icons: [
             ['transmission-gtk', 'transmission'],

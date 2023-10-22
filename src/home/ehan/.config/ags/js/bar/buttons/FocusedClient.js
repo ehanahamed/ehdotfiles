@@ -19,12 +19,6 @@ export default () => PanelButton({
         ],
     }),
     onClicked: () => {
-        for (var i = 0; i < Hyprland.monitors.length; i++) {
-            /*
-            docks are numbered by monitor starting from "dock0",
-            this loop runs toggleWindow for every dock on every monitor
-            */
-            App.toggleWindow("dock" + i);
-        }
+        App.toggleWindow("applauncher");
     },
 });

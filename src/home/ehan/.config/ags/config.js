@@ -3,7 +3,6 @@ import ScreenCorners from './js/screencorner/ScreenCorners.js';
 import Overview from './js/overview/Overview.js';
 import Dashboard from './js/dashboard/Dashboard.js';
 import OSD from './js/osd/OSD.js';
-import FloatingDock from './js/dock/FloatingDock.js';
 import Applauncher from './js/applauncher/Applauncher.js';
 import PowerMenu from './js/powermenu/PowerMenu.js';
 import Verification from './js/powermenu/Verification.js';
@@ -30,7 +29,6 @@ export default {
         forMonitors(TopBar),
         forMonitors(ScreenCorners),
         forMonitors(OSD),
-        forMonitors(FloatingDock),
         forMonitors(Desktop),
         forMonitors(Notifications),
         forMonitors(Lockscreen),
