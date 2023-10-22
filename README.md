@@ -71,8 +71,6 @@ I use `yay` to easily install aur packages.
            - the new dock takes up space, just like the top-bar/status-bar, and doesn't get re-hidden when un-hover-ed
          - `~/.config/ags/js/bar/buttons/FocusedClient.js`
          - `~/.config/ags/js/dock/FloatingDock.js`
-         
-
 
 ### Permissions, polkit, keyring, etc
 
