@@ -1,4 +1,4 @@
-import OverviewButton from './buttons/OverviewButton.js';
+import AppLauncherButton from './buttons/AppLauncherButton.js';
 import Workspaces from './buttons/Workspaces.js';
 import FocusedClient from './buttons/FocusedClient.js';
 import MediaIndicator from './buttons/MediaIndicator.js';
@@ -32,11 +32,13 @@ const SeparatorDot = (service, condition) => Separator({
 const Start = () => Widget.Box({
     className: 'start',
     children: [
-        OverviewButton(),
+        AppLauncherButton(),
         SeparatorDot(),
         Workspaces(),
         SeparatorDot(),
+        /*
         FocusedClient(),
+        */
         Widget.Box({ hexpand: true }),
         NotificationIndicator(),
         SeparatorDot(Notifications, n => n.notifications.length > 0 || n.dnd),
@@ -67,9 +69,9 @@ const End = () => Widget.Box({
         SeparatorDot(),
         ScreenRecord(),
         SeparatorDot(Recorder, r => r.recording),
-        SystemIndicators(),
         SeparatorDot(Battery, b => b.available),
         BatteryBar(),
+        SystemIndicators(),
         SeparatorDot(),
         PowerMenu(),
     ],

@@ -1,4 +1,4 @@
-import { Hyprland, Widget, Utils } from '../../imports.js';
+import { App, Hyprland, Widget, Utils } from '../../imports.js';
 import options from '../../options.js';
 import { range } from '../../utils.js';
 
@@ -8,7 +8,7 @@ const dispatch = arg => () => Utils.execAsync(`hyprctl dispatch workspace ${arg}
 const Workspaces = () => Widget.Box({
     children: range(ws || 20).map(i => Widget.Button({
         setup: btn => btn.id = i,
-        onClicked: dispatch(i),
+        onClicked: () => App.toggleWindow('overview'),
         child: Widget.Label({
             label: `${i}`,
             className: 'indicator',

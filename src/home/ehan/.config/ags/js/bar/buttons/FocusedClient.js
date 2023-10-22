@@ -14,11 +14,6 @@ export default () => PanelButton({
         children: [
             ClientLabel(),
         ],
-        binds: [
-            ['tooltip-text', Hyprland.active, 'client', c => c.title]
-        ],
+        binds: [['tooltip-text', Hyprland.active, 'client', c => c.title]],
     }),
-    onClicked: () => {
-        App.toggleWindow("applauncher");
-    },
 });

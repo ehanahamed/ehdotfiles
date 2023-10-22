@@ -4,10 +4,10 @@ import { distroIcon } from '../../variables.js';
 import { App } from '../../imports.js';
 
 export default () => PanelButton({
-    className: 'overview',
+    className: 'applauncher',
     connections: [[App, (btn, win, visible) => {
-        btn.toggleClassName('active', win === 'overview' && visible);
+        btn.toggleClassName('active', win === 'applauncher' && visible);
     }]],
-    onClicked: () => App.toggleWindow('overview'),
+    onClicked: () => App.toggleWindow('applauncher'),
     content: FontIcon(distroIcon),
 });
