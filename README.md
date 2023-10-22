@@ -10,18 +10,6 @@
    - Dependencies
      - `tofi` (AUR)
      - `cliphist` 
- - [`avizoVolumectl`](./src/ehansCustomStuff/sh/avizoVolumectl.sh)
-   - Custom modification of volumectl from https://github.com/misterdanb/avizo
-     - My version uses custom images, see [`osd.md`](./docs/configuringStuff/osd.md)
-   - Dependencies
-     - `pamixer`
-     - `pactl`
- - [`avizoLightctl`](./src/ehansCustomStuff/sh/avizoLightctl.sh)
-   - Custom modification of lightctl from https://github.com/misterdanb/avizo
-     - My version uses custom images, see [`osd.md`](./docs/configuringStuff/osd.md)
-   - Dependencies
-     - `brightnessctl-git` (AUR)
-       - I use AUR version because it has new features needed by other scripts (like Waybar)
 
 ## Packages
 
@@ -72,7 +60,7 @@ I use `yay` to easily install aur packages.
  - `pipewire-audio` - [audio & stuff](./src/audio.md)
  - `pipewire-pulse` - [audio & stuff](./src/audio.md)
  - `pulsemixer` - volume control tui
- - `pamixer` - needed for `avizo` and `ags` to work
+ - `pamixer` - needed for `ags` to work
 
 ### Extra stuff
 
@@ -103,11 +91,6 @@ I use `yay` to easily install aur packages.
    - see https://github.com/evanpurkhiser/mkinitcpio-colors
    - see [`etc/vconsole.conf`](./src/etc/vconsole.conf)
      - defines the colors to use
-
-### OSD, like volume/brightness indicator and stuff
-
- - `avizo` (AUR) - on screen display for multimedia keys and stuff
-   - requires `pamixer`, `brightnessctl-git` (AUR), and `pactl`
 
 ### Fonts
 
