@@ -102,7 +102,6 @@ const AudioLabel = () => Widget.Label({
         // Audio.speaker and Audio.microphone can be undefined
         // to workaround this use the ? chain operator
         self.label = `${Math.round(Audio.speaker.volume * 100)}%`
-        self.toggleClassName("muted", Audio.speaker.volume)
     }, 'speaker-changed']],
 });
 
@@ -112,7 +111,7 @@ const BrightnessIndicator = () => Widget.Icon({
 
 const BrightnessLabel = () => Widget.Label({
     connections: [[Brightness, self => {
-        self.label = `${Brightness.screen * 100}%`
+        self.label = `${Math.round(Brightness.screen * 100)}%`
     }]]
 })
 
