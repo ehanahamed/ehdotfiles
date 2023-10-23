@@ -11,8 +11,8 @@ export default {
         showPercentage: false,
 
         // at what percentages should the battery-bar change color
-        low: 30,
-        medium: 50,
+        low: 20,
+        medium: 30,
     },
 
     // path to read temperature from

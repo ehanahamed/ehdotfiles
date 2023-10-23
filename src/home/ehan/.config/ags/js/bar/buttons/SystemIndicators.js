@@ -5,6 +5,7 @@ import Indicator from '../../services/onScreenIndicator.js';
 import icons from '../../icons.js';
 import { App, Widget } from '../../imports.js';
 import { Bluetooth, Audio, Notifications, Network } from '../../imports.js';
+import Brightness from '../../services/brightness.js';
 
 const ProfileIndicator = () => Widget.Icon({
     connections: [[Asusctl, icon => {
@@ -33,6 +34,12 @@ const MicrophoneIndicator = () => Widget.Icon({
             .find(([threshold]) => threshold <= Audio.microphone.volume * 100)[1];
 
         icon.visible = Audio.recorders.length > 0 || Audio.microphone.isMuted;
+    }]],
+});
+
+const MicrophoneLabel = () => Widget.Label({
+    connections: [[Audio, self => {
+        self.label = `${Math.round(Audio.microphone.volume * 100)}%`
     }]],
 });
 
@@ -89,6 +96,26 @@ const AudioIndicator = () => Widget.Icon({
     }, 'speaker-changed']],
 });
 
+const AudioLabel = () => Widget.Label({
+    className: "audio-label",
+    connections: [[Audio, self => {
+        // Audio.speaker and Audio.microphone can be undefined
+        // to workaround this use the ? chain operator
+        self.label = `${Math.round(Audio.speaker.volume * 100)}%`
+        self.toggleClassName("muted", Audio.speaker.volume)
+    }, 'speaker-changed']],
+});
+
+const BrightnessIndicator = () => Widget.Icon({
+    icon: icons.brightness.screen
+})
+
+const BrightnessLabel = () => Widget.Label({
+    connections: [[Brightness, self => {
+        self.label = `${Brightness.screen * 100}%`
+    }]]
+})
+
 export default () => PanelButton({
     className: 'quicksettings panel-button',
     onClicked: () => App.toggleWindow('quicksettings'),
@@ -107,12 +134,14 @@ export default () => PanelButton({
         children: [
             Asusctl?.available && ProfileIndicator(),
             Asusctl?.available && ModeIndicator(),
-            DNDIndicator(),
-            BluetoothDevicesIndicator(),
+            BrightnessIndicator(),
+            BrightnessLabel(),
+            AudioIndicator(),
+            AudioLabel(),
+            MicrophoneIndicator(),
+            MicrophoneLabel(),
             BluetoothIndicator(),
             NetworkIndicator(),
-            AudioIndicator(),
-            MicrophoneIndicator(),
         ],
     }),
 });

@@ -9,7 +9,7 @@ const editScheme = (scheme, edit) => {
 
 // themes
 const kitty_dark = {
-    wallpaper: WP + 'kitty.jpeg',
+    wallpaper: WP + 'kittyDark.png',
     name: 'kitty_dark',
     icon: '󰄛',
     color_scheme: 'dark',
@@ -74,16 +74,16 @@ const purpleish = {
     active_gradient: 'to right, #7a52cc, #704bbb',
     border_color: '$fg_color',
     border_opacity: 100,
-    hypr_border_width: 8,
+    hypr_border_width: 4,
     border_width: 2,
-    wm_gaps: 20,
+    wm_gaps: 16,
     radii: 10,
     spacing: 10,
     shadow: 'transparent',
     drop_shadow: false,
     transition: 200,
     screen_corners: true,
-    bar_style: 'normal',
+    bar_style: 'floating',
     layout: 'topbar',
     font: 'NotoSans Nerd Font Propo',
     mono_font: 'NotoSansM Nerd Font Propo',
