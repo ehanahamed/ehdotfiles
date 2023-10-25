@@ -40,6 +40,7 @@ I use `yay` to easily install aur packages.
      - `swww` (AUR)
      - `hyprpicker` (AUR)
      - `python-pam`
+     - `pavucontrol` - NOT actually needed, but some buttons are supposed to launch pavucontrol
 
 ### Permissions, polkit, keyring, etc
 
@@ -71,6 +72,8 @@ I use `yay` to easily install aur packages.
  - `nemo` - the only gui file manager that doesn't suck
  - `nemo-fileroller` - useful stuff for nemo
  - `starship` - shell prompt
+ - `pavucontrol` - audio gui
+ - `audacity` - audio recording, editing, etc
 
 ### gtk & stuff
  - `lxappearance` - super useful
