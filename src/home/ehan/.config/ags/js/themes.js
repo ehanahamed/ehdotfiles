@@ -46,7 +46,7 @@ const kitty_dark = {
     border_color: '$fg_color',
     border_opacity: 97,
     border_width: 1,
-    hypr_border_width: 1
+    hypr_border_width: 4
 };
 
 const purpleish = {
@@ -74,7 +74,7 @@ const purpleish = {
     active_gradient: 'to right, #7a52cc, #704bbb',
     border_color: '$fg_color',
     border_opacity: 100,
-    hypr_border_width: 4,
+    hypr_border_width: 6,
     border_width: 2,
     wm_gaps: 16,
     radii: 10,
