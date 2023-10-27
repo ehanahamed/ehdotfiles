@@ -78,8 +78,8 @@ I use `yay` to easily install aur packages.
 ### gtk & stuff
  - `lxappearance` - super useful
  - `gnome-themes-extra` - needed for gtk themes to work i think?
- - `catppuccin-gtk-theme-macchiato` (AUR) - gtk theme
-   - I use `Catppuccin-Macchiato-Standard-Lavender-Dark`
+ - `catppuccin-gtk-theme-mocha` (AUR) - gtk theme
+   - I use `Catppuccin-Mocha-Standard-Lavender-Dark`
    - I set this using `lxappearance`, and setting the `$GTK_THEME` env variable in [`~/.config/hypr/hyprland.conf`](./src/home/ehan/.config/hypr/hyprland.conf)
      - Some line in my `hyprland.conf` has `env = GTK_THEME...`
  - `papirus-icon-theme-git` (AUR) - icon theme
