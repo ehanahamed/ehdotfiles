@@ -99,3 +99,11 @@ I use `yay` to easily install aur packages.
 
  - `ttf-noto-nerd`
    - I use `NotoSansM Nerd Font Propo` in waybar and other stuff
+
+## Extra info?
+
+I use `altgr-intl` keyboard layout variant (`kb_variant`), set in `hyprland.conf`, see https://wiki.hyprland.org/Configuring/Variables/#input
+  - When holding down alt, some symbols can combine with other letters to type special characters, for example:
+    - `ALT` + `"` + `o` = `ö`
+    - `ALT` + `'` + `a` = `á`
+    - `ALT` + `~` + `n` = `ñ`
