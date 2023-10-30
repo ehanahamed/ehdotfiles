@@ -103,7 +103,12 @@ I use `yay` to easily install aur packages.
 ## Extra info?
 
 I use `altgr-intl` keyboard layout variant (`kb_variant`), set in `hyprland.conf`, see https://wiki.hyprland.org/Configuring/Variables/#input
-  - When holding down alt, some symbols can combine with other letters to type special characters, for example:
+  - This variant lets you use ALT to type special characters, for example:
     - `ALT` + `"` + `o` = `ö`
     - `ALT` + `'` + `a` = `á`
+    - `ALT` + `c` = `©`
+    - `ALT` + `?` = `¿`
     - `ALT` + `~` + `n` = `ñ`
+    - btw these special character combinations quite logical, for example:
+      - `ALT` + `SHIFT` + `0` = `°`
+        - so, `ALT` + `SHIFT` + `0` + `a` = `å`
