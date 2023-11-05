@@ -1,5 +1,10 @@
 # Ehan's dotfiles
 
+## TODO
+
+- cava config
+  - `source` is the number from `pactl list sources`, or `auto`
+
 ## Custom scripts
 
  - [`tofiHyprshot.sh`](./src/ehansCustomStuff/sh/tofiHyprshot.sh)
