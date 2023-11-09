@@ -7,6 +7,10 @@
 - move from wofi to ags
   - add emoji stuff to ags
   - move clipboard stuff to ags
+- printer stuff
+  - document & implement
+  - CUPS
+  - system-config-printer (https://github.com/OpenPrinting/system-config-printer) for CUPS
 
 ## Custom scripts
 
