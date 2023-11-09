@@ -4,6 +4,9 @@
 
 - cava config
   - `source` is the number from `pactl list sources`, or `auto`
+- move from wofi to ags
+  - add emoji stuff to ags
+  - move clipboard stuff to ags
 
 ## Custom scripts
 
