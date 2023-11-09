@@ -19,7 +19,7 @@ setup.scssWatcher();
 setup.globalServices();
 
 export default {
-    maxStreamVolume: 1.05,
+    maxStreamVolume: 1.5,
     cacheNotificationActions: true,
     closeWindowDelay: {
         'quicksettings': options.windowAnimationDuration,
