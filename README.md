@@ -11,6 +11,8 @@
   - document & implement
   - CUPS
   - system-config-printer (https://github.com/OpenPrinting/system-config-printer) for CUPS
+- rerun ags when new monitor added
+  - https://wiki.hyprland.org/0.22.0beta/FAQ/#how-do-i-move-my-favorite-workspaces-to-a-new-monitor-when-i-plug-it-in
 
 ## Custom scripts
 
