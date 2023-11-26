@@ -1,5 +1,7 @@
 # Ehan's dotfiles
 
+hyprland rice (last updated 2023/11/26)
+
 ## TODO
 
 - cava config
