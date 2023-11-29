@@ -10,8 +10,6 @@ awesomewm rice (last updated 2023/11/26, work in progress)
   - document & implement
   - CUPS
   - system-config-printer (https://github.com/OpenPrinting/system-config-printer) for CUPS
-- rerun ags when new monitor added
-  - https://wiki.hyprland.org/0.22.0beta/FAQ/#how-do-i-move-my-favorite-workspaces-to-a-new-monitor-when-i-plug-it-in
 
 ## Packages
 
@@ -26,6 +24,7 @@ I use `yay` to easily install aur packages.
 ### Window Manager & Stuff
 
  - `awesome` - wm
+ - `picom` - compositor (adds animations & stuff)
  - `kitty` - terminal
  - `brightnessctl-git` (AUR) - screen brightness (aur `-git`` version has new features required by this rice)
  - `blueman` - bluetooth gui
@@ -49,7 +48,7 @@ I use `yay` to easily install aur packages.
  - `pipewire-audio` - [audio & stuff](./src/audio.md)
  - `pipewire-pulse` - [audio & stuff](./src/audio.md)
  - `pulsemixer` - volume control tui
- - `pamixer` - needed for `ags` to work
+ - `pamixer` - ~~needed for `ags` to work~~ (used by old rice, still useful tho)
 
 ### Extra stuff
 
