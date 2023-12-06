@@ -4,7 +4,8 @@ import Theme from '../../services/theme/theme.js';
 import Lockscreen from '../../services/lockscreen.js';
 import Avatar from '../../misc/Avatar.js';
 import { uptime } from '../../variables.js';
-import { Battery, Widget } from '../../imports.js';
+import { Battery, Widget, App } from '../../imports.js';
+
 
 export const BatteryProgress = () => Widget.Box({
     className: 'battery-progress',
@@ -44,11 +45,6 @@ export default () => Widget.Box({
             children: [
                 Widget.Box({
                     children: [
-                        Widget.Button({
-                            valign: 'center',
-                            onClicked: () => Theme.openSettings(),
-                            child: Widget.Icon(icons.settings),
-                        }),
                         Widget.Label({
                             className: 'uptime',
                             hexpand: true,
@@ -59,12 +55,12 @@ export default () => Widget.Box({
                         }),
                         Widget.Button({
                             valign: 'center',
-                            onClicked: () => Lockscreen.lockscreen(),
-                            child: Widget.Icon(icons.lock),
+                            onClicked: () => Theme.openSettings(),
+                            child: Widget.Icon(icons.settings),
                         }),
                         Widget.Button({
                             valign: 'center',
-                            onClicked: () => PowerMenu.action('shutdown'),
+                            onClicked: () => App.openWindow('powermenu'),
                             child: Widget.Icon(icons.powermenu.shutdown),
                         }),
                     ],

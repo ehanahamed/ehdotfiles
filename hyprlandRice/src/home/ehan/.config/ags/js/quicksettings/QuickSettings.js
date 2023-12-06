@@ -55,12 +55,8 @@ export default () => PopupWindow({
                 ],
             })]),
             Row(
-                [Homogeneous([NetworkToggle(), BluetoothToggle()]), DND()],
+                [Homogeneous([NetworkToggle(), BluetoothToggle()])],
                 [WifiSelection(), BluetoothDevices()],
-            ),
-            Row(
-                [Homogeneous([ProfileToggle(), ThemeToggle()]), MicMute()],
-                [ProfileSelector(), ThemeSelector()],
             ),
             Media(),
         ],

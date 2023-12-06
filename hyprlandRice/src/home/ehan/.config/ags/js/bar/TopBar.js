@@ -72,8 +72,6 @@ const End = () => Widget.Box({
         SeparatorDot(Battery, b => b.available),
         BatteryBar(),
         SystemIndicators(),
-        SeparatorDot(),
-        PowerMenu(),
     ],
 });
 
