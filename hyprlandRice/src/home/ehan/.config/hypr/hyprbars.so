@@ -1,0 +1,4 @@
+this file will compile differently on different machines
+plus, using "pre-compiled" .so files from others' dotfiles is dangerous
+
+instructions to compile this yourself are in hyprbars.md
