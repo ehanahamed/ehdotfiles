@@ -103,13 +103,15 @@ I use `yay` to easily install aur packages.
 
 ### Theming the virtual console (terminal before login, during boot)
 
- - `mkinitcpio-colors-git` (AUR)
-   - see [`/etc/mkinitcpio.conf`](./src/etc/mkinitcpio.conf)
-     - "runs" `mkinitcpio-colors` to set colors
-   - see [`/etc/mkinitcpio.conf.md`](./src/etc/mkinitcpio.conf.md)
-   - see https://github.com/evanpurkhiser/mkinitcpio-colors
-   - see [`etc/vconsole.conf`](./src/etc/vconsole.conf)
-     - defines the colors to use
+- `mkinitcpio-colors-git` (AUR)
+  - to setup:
+    - update `/etc/mkinitcpio.conf`
+      - instructions here: [`etc/mkinitcpio.conf.md`](./src/etc/mkinitcpio.conf.md)
+    - define colors in [`etc/vconsole.conf`](./src/etc/vconsole.conf)
+      - "instructions"/example in the file
+    - then install `mkinitcpio-colors-git` (AUR), or if you installed it before the steps above, reinstall it
+      - when you reinstall it, the build script regenerates your initramfs
+  - for more info see https://github.com/evanpurkhiser/mkinitcpio-colors and [`etc/mkinitcpio.conf.md`](./src/etc/mkinitcpio.conf.md)
 
 ### Fonts
 
