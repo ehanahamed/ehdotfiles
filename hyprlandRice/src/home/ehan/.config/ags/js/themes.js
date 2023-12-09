@@ -8,7 +8,7 @@ const editScheme = (scheme, edit) => {
 };
 
 // themes
-const kitty_dark = {
+/*const kitty_dark = {
     wallpaper: WP + 'kittyDark.png',
     name: 'kitty_dark',
     icon: '󰄛',
@@ -47,7 +47,7 @@ const kitty_dark = {
     border_opacity: 97,
     border_width: 1,
     hypr_border_width: 4
-};
+};*/
 
 const purpleish = {
     wallpaper: WP + 'purpleish.png',
@@ -71,10 +71,10 @@ const purpleish = {
     accent_fg: '#1e1e32',
     widget_bg: '#5C5C99',
     widget_opacity: 80,
-    active_gradient: 'to right, #7a52cc, #704bbb',
+    active_gradient: 'to right, #7a52cc, #7a52cc',
     border_color: '$fg_color',
     border_opacity: 100,
-    hypr_border_width: 6,
+    hypr_border_width: 8,
     border_width: 2,
     wm_gaps: 16,
     radii: 10,
@@ -91,6 +91,5 @@ const purpleish = {
 }
 
 export default [
-    kitty_dark,
     purpleish
 ];
