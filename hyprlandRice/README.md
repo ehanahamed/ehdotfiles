@@ -114,7 +114,7 @@ I use `yay` to easily install aur packages.
 ### Fonts
 
  - `ttf-noto-nerd`
-   - I use `NotoSansM Nerd Font Propo` in waybar and other stuff
+   - I use `NotoSansM Nerd Font Propo` in ~~waybar and other~~ stuff
 
 ## Extra info?
 
