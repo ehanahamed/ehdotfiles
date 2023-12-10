@@ -50,13 +50,21 @@ I use `yay` to easily install aur packages.
  - `wev` (AUR) - test/debug keybinds & stuff
  - `brightnessctl-git` (AUR) - screen brightness (aur `-git`` version has new features required by this rice)
  - `blueman` - bluetooth gui
- - `aylurs-gtk-shell` (AUR) - (aka "ags") widgets, notifications, status bar, osd, etc
+ - `aylurs-gtk-shell-git` (AUR) - (aka "ags") widgets, notifications, status bar, osd, etc
    - dependencies (for the config, not ags itself)
      - `sassc`
      - `swww` (AUR)
      - `hyprpicker` (AUR)
      - `python-pam`
      - `pavucontrol` - NOT actually needed, but some buttons are supposed to launch pavucontrol
+     - `gnome-bluetooth-3.0` (NOT the same as `gnome-bluetooth`)
+       - (this is NOT one of gnome's bloatware, its an important bluetooth backend thingy)
+
+### Bluetooth
+
+- `bluez` - bluetooth
+- `bluez-utils` - bluetooth, also, it provides `bluetoothctl`
+- something else i forgor
 
 ### Permissions, polkit, keyring, etc
 
