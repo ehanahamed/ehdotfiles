@@ -1,12 +1,8 @@
 # hyprland plugins
 
-`hyprbars.so` and stuff are hyprland plugins
-
-Those .so files will compile differently on different machines, and it's dangerous to download and use .so files compiled by someone else (and it probably won't work on your system), so the instructions to compile them yourself are below. It's actually really simple. 
-
 ## Compiling
 
-To compile, see https://wiki.hyprland.org/Plugins/Using-Plugins/
+To compile plugins, see https://wiki.hyprland.org/Plugins/Using-Plugins/
 
 If the url above changes, just search hyprland's documentation/wiki for "plugins".
 
@@ -31,7 +27,7 @@ After you compile it and get that `pluginname.so` file, copy that somewhere (I p
 
 Now add it to the `hyprland.conf` config (use an absolute path)
 
-For example, my config has
+For example, my config ~~has~~ (used to have)
 ```
 plugin = /home/ehan/.config/hypr/hyprbars.so
 ```
