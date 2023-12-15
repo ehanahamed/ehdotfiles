@@ -126,10 +126,15 @@ I use `yay` to easily install aur packages.
  - `ttf-noto-nerd`
    - I use `NotoSansM Nerd Font Propo` in ~~waybar and other~~ stuff
 
-## Extra info?
+### Input & other languages
 
-I use `altgr-intl` keyboard layout variant (`kb_variant`), set in `hyprland.conf`, see https://wiki.hyprland.org/Configuring/Variables/#input
-  - This variant lets you use ALT to type special characters, for example:
+- `ibus` - input method framework
+  - lets you switch keyboard layouts & use different alphabets/languages (like Bangla, Chinese, Russian, etc)
+ 
+btw, there are seperate things that ibus doesn't control (explained below)
+
+I use `altgr-intl` keyboard layout variant through ibus, but also without ibus by setting `kb_variant` in `hyprland.conf`, see https://wiki.hyprland.org/Configuring/Variables/#input
+  - This keyboard layout/variant lets you use ALT to type special characters, for example:
     - `ALT` + `"` + `o` = `ö`
     - `ALT` + `'` + `a` = `á`
     - `ALT` + `c` = `©`
@@ -138,3 +143,15 @@ I use `altgr-intl` keyboard layout variant (`kb_variant`), set in `hyprland.conf
     - btw these special character combinations quite logical, for example:
       - `ALT` + `SHIFT` + `0` = `°`
         - so, `ALT` + `SHIFT` + `0` + `a` = `å`
+
+I set compose key in hyprland using `kb_options` in `hyprland.conf`
+  - I set it to my capslock key, because I never use capslock, you can set it to whatever you want using `kb_options`
+    - search for `kb_options` my [`hyprland.conf`](./src/home/ehan/.config/hypr/hyprland.conf) to see the syntax
+    - also see the hyprland wiki: https://wiki.hyprland.org/Configuring/Variables/#input
+  - Just like the alt deadkey, compose key is very epic and logical, for example:
+    - `COMPOSE` then `o` then `c` = `©`
+    - `COMPOSE` then `o` then `a` = `å`
+
+One difference between the compose key and the `altgr-intl` layout variant is that the compose key works on every layout, while `altgr-intl` IS a layout.
+
+Also, you don't need to hold down the compose key, you press it once, then press the other keys (that's why i typed "then" for compose and "+" for altgr-intl)
