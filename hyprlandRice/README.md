@@ -131,6 +131,7 @@ I use `yay` to easily install aur packages.
 - `fcitx5` - input method framework
   - lets you switch keyboard layouts & use different alphabets/languages (like Bangla, Chinese, Russian, etc)
 - `fcitx5-configtool` - optional gui settings menu for fcitx5
+- `fcitx5-chinese-addons` - pinyin and table input method for fcitx5
  
 btw, there are seperate things that fcitx5 doesn't control (explained below)
 
