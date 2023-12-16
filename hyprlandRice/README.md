@@ -128,12 +128,13 @@ I use `yay` to easily install aur packages.
 
 ### Input & other languages
 
-- `ibus` - input method framework
+- `fcitx5` - input method framework
   - lets you switch keyboard layouts & use different alphabets/languages (like Bangla, Chinese, Russian, etc)
+- `fcitx5-configtool` - optional gui settings menu for fcitx5
  
-btw, there are seperate things that ibus doesn't control (explained below)
+btw, there are seperate things that fcitx5 doesn't control (explained below)
 
-I use `altgr-intl` keyboard layout variant through ibus, but also without ibus by setting `kb_variant` in `hyprland.conf`, see https://wiki.hyprland.org/Configuring/Variables/#input
+I use `altgr-intl` keyboard layout variant through fcitx5, but also without fcitx5 by setting `kb_variant` in `hyprland.conf`, see https://wiki.hyprland.org/Configuring/Variables/#input
   - This keyboard layout/variant lets you use ALT to type special characters, for example:
     - `ALT` + `"` + `o` = `ö`
     - `ALT` + `'` + `a` = `á`
