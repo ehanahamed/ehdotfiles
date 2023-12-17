@@ -1,9 +1,12 @@
-import { forMonitors } from "./extraUtils.js";
-import { topBar } from "./topBar.js"
+import App from 'resource:///com/github/Aylur/ags/app.js';
+import { forMonitors } from "./js/extraUtils.js";
+import { topBar } from "./topBar.js";
+import { sideBar } from "./sideBar.js";
 
 const windows = function () {
   return [
-    forMonitors(topBar)
+    forMonitors(topBar),
+    forMonitors(sideBar)
   ]
 };
 
@@ -14,4 +17,5 @@ export default {
   [0, 1, [2, 3], 4].flat(1) would turn into [0, 1, 2, 3, 4]
   */
   windows: windows().flat(1),
+  style: App.configDir + "/style.css"
 };

@@ -10,9 +10,8 @@ export function topBar(monitor) {
   }
 
   const window = Widget.Window({
-    monitor,
-    // name has to be unique
-    name: `bar${monitor}`,
+    monitor: monitor,
+    name: `topBar${monitor}`,
     anchor: ["top", "left", "right"],
     exclusivity: "exclusive",
     child: label(monitor),
