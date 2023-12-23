@@ -1,9 +1,6 @@
 import * as Utils from 'resource:///com/github/Aylur/ags/utils.js';
 import Gdk from 'gi://Gdk';
 
-/*
-Returns
-*/
 export function range(start, length) {
   return Array.from({ length }, (_, i) => i + start);
 }
