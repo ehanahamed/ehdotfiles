@@ -34,8 +34,10 @@ All of these are from arch's repositories through or from the `aur`.
 I use `yay` to easily install aur packages.
 
 ### Important-ish stuff
- - `networkmanager` - network stuff, provides `nmcli` and `nmtui`
- - `ly` - [display manager](./src/dm.md)
+- `networkmanager` - network stuff, provides `nmcli` and `nmtui`
+- `lightdm` - display manager
+  - after installing `lightdm` and a greeter (like `lightdm-gtk-greeter`) enable `lightdm.service` (`systemctl enable lightdm.service`)
+- `lightdm-gtk-greeter` - gtk greeter for lightdm 
 
 ### Window Manager & Stuff
 
