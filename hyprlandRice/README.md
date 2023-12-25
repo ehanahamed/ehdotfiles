@@ -35,9 +35,15 @@ I use `yay` to easily install aur packages.
 
 ### Important-ish stuff
 - `networkmanager` - network stuff, provides `nmcli` and `nmtui`
-- `lightdm` - display manager
-  - after installing `lightdm` and a greeter (like `lightdm-gtk-greeter`) enable `lightdm.service` (`systemctl enable lightdm.service`)
-- `lightdm-gtk-greeter` - gtk greeter for lightdm 
+- `greetd` - display manager
+  - to setup, enable `greetd.service` (`systemctl enable greetd.service`)
+  - configuration file at `/etc/greetd/config.toml`
+- `greetd-regreet` - customizable greeter for greetd
+  - to setup:
+    - first make sure `greetd` is installed and setup
+    - then edit `/etc/greetd/config.toml`
+      - add `command = "cage -s -- regreet"` and `user = "greeter"` under `[default_session]`
+      - see [my /etc/greetd/config.toml](./src/etc/greetd/config.toml) for an example
 
 ### Window Manager & Stuff
 
