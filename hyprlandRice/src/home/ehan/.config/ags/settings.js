@@ -1,7 +1,10 @@
-export default {
+export var Settings = {
   sideBar: {
     volume: {
-      usuallyMuted: true,
+      stayMuted: true,
+    },
+    battery: {
+      low: 20
     }
   }
 }

@@ -2,7 +2,7 @@ import Widget from "resource:///com/github/Aylur/ags/widget.js";
 import Audio from "resource:///com/github/Aylur/ags/service/audio.js";
 import Battery from "resource:///com/github/Aylur/ags/service/battery.js";
 import Brightness from "./js/brightness.js";
-import Settings from "./settings.js"
+import { Settings } from "./settings.js"
 
 export function sideBar(monitor) {
   function label(monitor) {
@@ -66,6 +66,33 @@ export function sideBar(monitor) {
         hpack: "center",
         class_names: ["icon"]
       })
+    ],
+    connections: [
+      [
+        Audio,
+        function (self) {
+          /*
+          The ? operator (before the .volume) will make the expression return undefined if Audio.speaker is undefined
+          Without the question mark, it would throw an error if Audio.speaker is undefined
+          The || 0 will assign self.value to 0 if Audio.speaker?.volume is undefined,
+          otherwise, self.value will be set to Audio.speaker.volume
+          */
+          var volume = Audio.speaker?.volume || 0;
+          if (volume > 1) {
+            self.toggleClassName("amp", true);
+          } else {
+            self.toggleClassName("amp", false);
+          }
+          if (Settings.sideBar.volume.stayMuted == true) {
+            if (volume > 0) {
+              self.toggleClassName("unmuted", true);
+            } else {
+              self.toggleClassName("unmuted", false);
+            }
+          }
+        },
+        "speaker-changed"
+      ]
     ]
   })
 
@@ -139,11 +166,28 @@ export function sideBar(monitor) {
         class_names: ["icon"]
       })
     ],
+    connections: [
+      [
+        Battery,
+        function (self) {
+          if (Battery.percent <= Settings.sideBar.battery.low) {
+            self.toggleClassName("low", true);
+          } else {
+            self.toggleClassName("low", false);
+          }
+          if (Battery.charging == true) {
+            self.toggleClassName("charging", true);
+          } else {
+            self.toggleClassName("charging", false);
+          }
+        },
+      ],
+    ]
   });
 
   const Start = Widget.Box({
     vertical: true,
-    spacing: 10,
+    spacing: 20,
     children: [volume, brightness, battery],
   });
 

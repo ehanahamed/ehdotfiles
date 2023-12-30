@@ -26,14 +26,44 @@ progressbar progress {
   min-width: 1rem;
 }
 
-.sideBar progressbar trough {
+progressbar trough {
   background-color: #282842;
 }
 
-.sideBar .volume progressbar progress {
+progressbar progress {
+  background-color: #7a52cc;
+}
+
+.sideBar .volume.amp label,
+.sideBar .volume.unmuted label {
+  color: #ff6666;
+}
+
+.sideBar .volume.amp progressbar progress,
+.sideBar .volume.unmuted progressbar progress {
   background-color: #ff6666;
 }
 
-.sideBar .brightness progressbar progress {
-  background-color: #7a52cc;
+.sideBar .battery.charging label {
+  color: #52CCA3;
+}
+
+.sideBar .battery.charging progressbar progress {
+  background-color: #52CCA3;
+}
+
+.sideBar .battery.low label {
+  color: #ff6666;
+}
+
+.sideBar .battery.low progressbar progress {
+  background-color: #ff6666;
+}
+
+.sideBar .battery.charging.low label {
+  color: #FF9966;
+}
+
+.sideBar .battery.charging.low progressbar progress {
+  background-color: #FF9966;
 }
