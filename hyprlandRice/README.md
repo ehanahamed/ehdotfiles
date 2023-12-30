@@ -106,10 +106,12 @@ I use `yay` to easily install aur packages.
  - `gnome-themes-extra` - needed for gtk themes to work i think?
  - `catppuccin-gtk-theme-mocha` (AUR) - gtk theme
    - I use `Catppuccin-Mocha-Standard-Lavender-Dark`
-   - I set this using `lxappearance`, and setting the `$GTK_THEME` env variable in [`~/.config/hypr/hyprland.conf`](./src/home/ehan/.config/hypr/hyprland.conf)
+   - I set the `$GTK_THEME` env variable in [`~/.config/hypr/hyprland.conf`](./src/home/ehan/.config/hypr/hyprland.conf)
      - Some line in my `hyprland.conf` has `env = GTK_THEME...`
  - `papirus-icon-theme-git` (AUR) - icon theme
-   - I set the icon theme using `lxappearance` and by running `gsettings set org.gnome.desktop.interface icon-theme Papirus-Dark`
+   - I set the icon theme using by running `gsettings set org.gnome.desktop.interface icon-theme Papirus-Dark` (which gets ran automatically in hyprland.conf too)
+    - Even though it says `gnome.desktop...`, it has nothing to do with gnome, I use hyprland, there is no gnome here.
+    - Some line in my `hyprland.conf` has `exec-once = gsettings set...`
 
 ### Theming the virtual console (terminal before login, during boot)
 

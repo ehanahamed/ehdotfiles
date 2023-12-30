@@ -1,3 +1,39 @@
+* {
+  font-family: "NotoSansM Nerd Font Propo";
+  font-size: 16px;
+  color: #a3a3cc;
+}
+
+.icon {
+  font-size: 20px;
+}
+
 .sideBar {
   background: transparent;
+}
+
+.sideBar volume,
+.sideBar brightness,
+.sideBar battery {
+  padding-top: 200px;
+}
+
+progressbar,
+progressbar trough,
+progressbar progress {
+  border-radius: 0px;
+  border: none;
+  min-width: 1rem;
+}
+
+.sideBar progressbar trough {
+  background-color: #282842;
+}
+
+.sideBar .volume progressbar progress {
+  background-color: #ff6666;
+}
+
+.sideBar .brightness progressbar progress {
+  background-color: #7a52cc;
 }
