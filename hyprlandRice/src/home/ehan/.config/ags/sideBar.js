@@ -5,16 +5,9 @@ import Brightness from "./js/brightness.js";
 import { Settings } from "./settings.js"
 
 export function sideBar(monitor) {
-  function label(monitor) {
-    const labelLabel = Widget.Label({
-      label: "sidebar on monitor " + monitor,
-    });
-
-    return labelLabel;
-  }
-
   const volume = Widget.Box({
     vertical: true,
+    vpack: "center",
     class_names: ["volume"],
     children: [
       Widget.ProgressBar({
@@ -98,6 +91,7 @@ export function sideBar(monitor) {
 
   const brightness = Widget.Box({
     vertical: true,
+    vpack: "center",
     class_names: ["brightness"],
     children: [
       Widget.ProgressBar({
@@ -134,6 +128,7 @@ export function sideBar(monitor) {
 
   const battery = Widget.Box({
     vertical: true,
+    vpack: "center",
     class_names: ["battery"],
     children: [
       Widget.ProgressBar({
@@ -184,13 +179,13 @@ export function sideBar(monitor) {
       ],
     ]
   });
-
+/*
   const Start = Widget.Box({
     vertical: true,
     spacing: 20,
     children: [volume, brightness, battery],
   });
-
+*/
   const window = Widget.Window({
     monitor: monitor,
     name: `sideBar${monitor}`,
@@ -200,9 +195,9 @@ export function sideBar(monitor) {
     margins: [20, 10],
     child: Widget.CenterBox({
       vertical: true,
-      start_widget: Start /*
-      center_widget: Center(),
-      end_widget: End()*/,
+      start_widget: volume,
+      center_widget: brightness,
+      end_widget: battery,
     }),
   });
 

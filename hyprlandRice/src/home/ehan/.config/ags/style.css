@@ -18,12 +18,16 @@
   padding-top: 200px;
 }
 
+progressbar {
+  min-height: 12rem;
+}
+
 progressbar,
 progressbar trough,
 progressbar progress {
-  border-radius: 0px;
+  border-radius: 0.6rem;
   border: none;
-  min-width: 1rem;
+  min-width: 2rem;
 }
 
 progressbar trough {
