@@ -7,7 +7,7 @@ import { Settings } from "./settings.js"
 export function sideBar(monitor) {
   const volume = Widget.Box({
     vertical: true,
-    vpack: "center",
+    vpack: "start",
     class_names: ["volume"],
     children: [
       Widget.ProgressBar({
@@ -128,7 +128,7 @@ export function sideBar(monitor) {
 
   const battery = Widget.Box({
     vertical: true,
-    vpack: "center",
+    vpack: "end",
     class_names: ["battery"],
     children: [
       Widget.ProgressBar({
@@ -179,24 +179,25 @@ export function sideBar(monitor) {
       ],
     ]
   });
-/*
-  const Start = Widget.Box({
+
+  const start = Widget.Box({
     vertical: true,
     spacing: 20,
-    children: [volume, brightness, battery],
+    children: [volume, brightness],
   });
-*/
+
   const window = Widget.Window({
     monitor: monitor,
     name: `sideBar${monitor}`,
     class_names: ["sideBar"],
     anchor: ["left", "top", "bottom"],
     exclusivity: "exclusive",
-    margins: [20, 10],
+    margins: [20, 4],
     child: Widget.CenterBox({
       vertical: true,
-      start_widget: volume,
-      center_widget: brightness,
+      spacing: 8,
+      start_widget: start,
+      /*center_widget: */
       end_widget: battery,
     }),
   });

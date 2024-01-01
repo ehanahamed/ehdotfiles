@@ -8,66 +8,128 @@
   font-size: 20px;
 }
 
+@define-color red #ff6666;
+@define-color redAlt #ff9999;
+@define-color redDark #cc5252;
+@define-color orange #ff9966;
+@define-color orangeAlt #ffbb99;
+@define-color yellow #ffcc66;
+@define-color yellowAlt #ffdd99;
+@define-color green #52cca3;
+@define-color greenAlt #7accb1;
+@define-color greenDark #3d997a;
+@define-color blue #527ACC;
+@define-color blueAlt #7A96CC;
+@define-color purple #7a52cc;
+@define-color purpleAlt #967acc;
+@define-color pink #cc52a3;
+@define-color pinkAlt #cc7ab1;
+@define-color primary #7a52cc;
+@define-color primaryAlt #967acc;
+@define-color primaryDark #5c3d99;
+@define-color extra #52cca3;
+@define-color extraAlt #7accb1;
+@define-color extraDark #3d997a;
+@define-color bgExtra #181829;
+@define-color black #1e1e32;
+@define-color gray #3d3d66;
+@define-color grayAlt #5c5c99;
+@define-color white #a3a3cc;
+@define-color fg #a3a3cc;
+@define-color bg3 #5c5c99;
+@define-color bg2 #3d3d66;
+@define-color bg1Alt #282842;
+@define-color bg1 #1e1e32;
+@define-color bg0 #181829;
+
 .sideBar {
   background: transparent;
 }
 
-.sideBar volume,
-.sideBar brightness,
-.sideBar battery {
-  padding-top: 200px;
-}
-
-progressbar {
-  min-height: 12rem;
+.sideBar label {
+  min-width: 4rem;
 }
 
 progressbar,
 progressbar trough,
 progressbar progress {
   border-radius: 0.6rem;
-  border: none;
   min-width: 2rem;
+  outline: none;
+  opacity: 1;
+  box-shadow: none;
+}
+
+progressbar {
+  min-height: 12rem;
+  border: 0.2rem solid @bg1;
 }
 
 progressbar trough {
-  background-color: #282842;
+  background: @bg1Alt;
+  border: none;
 }
 
 progressbar progress {
-  background-color: #7a52cc;
+  background: @primary;
+  border: none;
 }
 
 .sideBar .volume.amp label,
 .sideBar .volume.unmuted label {
-  color: #ff6666;
+  color: @red;
 }
 
 .sideBar .volume.amp progressbar progress,
 .sideBar .volume.unmuted progressbar progress {
-  background-color: #ff6666;
+  background: @red;
 }
 
 .sideBar .battery.charging label {
-  color: #52CCA3;
+  color: @green;
 }
 
 .sideBar .battery.charging progressbar progress {
-  background-color: #52CCA3;
+  background: @green;
 }
 
 .sideBar .battery.low label {
-  color: #ff6666;
+  color: @red;
 }
 
 .sideBar .battery.low progressbar progress {
-  background-color: #ff6666;
+  background: @red;
 }
 
 .sideBar .battery.charging.low label {
-  color: #FF9966;
+  color: @orange;
 }
 
 .sideBar .battery.charging.low progressbar progress {
-  background-color: #FF9966;
+  background: @orange;
+}
+
+.topBar {
+  background: @bg1;
+}
+
+button,
+button label {
+  background: @bg1;
+  color: @fg;
+  border-radius: 0.8rem;
+  border: none;
+  outline: none;
+  opacity: 1;
+  box-shadow: none;
+}
+
+button:hover,
+button:hover label {
+  background: @bg1;
+  color: @primary;
+  border: none;
+  outline: none;
+  opacity: 1;
+  box-shadow: none;
 }

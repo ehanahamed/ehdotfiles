@@ -1,5 +1,6 @@
 import Widget from "resource:///com/github/Aylur/ags/widget.js";
 import { execAsync } from 'resource:///com/github/Aylur/ags/utils.js'
+import { Hyprland } from "resource:///com/github/Aylur/ags/service/hyprland.js";
 import { Settings } from "./settings.js"
 
 export function topBar(monitor) {
@@ -11,7 +12,10 @@ export function topBar(monitor) {
     return labelLabel;
   }
 
-  const clock = Widget.Label({
+  
+
+  const clock = Widget.Button({
+    child: Widget.Label({
     class_name: 'clock',
     setup: function (self) {
       self.poll(1000,
@@ -22,6 +26,7 @@ export function topBar(monitor) {
           )
       )
     }
+    }),
   });
 
   const window = Widget.Window({
@@ -29,7 +34,13 @@ export function topBar(monitor) {
     name: `topBar${monitor}`,
     anchor: ["top", "left", "right"],
     exclusivity: "exclusive",
-    child: clock,
+    class_names: ["topBar"],
+    child: Widget.CenterBox({
+      vertical: false,
+      spacing: 8,
+      /*start_widget: start,*/
+      center_widget: clock,
+    }),
   });
 
   return window;
