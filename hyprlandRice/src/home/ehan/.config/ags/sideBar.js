@@ -48,7 +48,7 @@ export function sideBar(monitor) {
               Without the question mark, it would throw an error if Audio.speaker is undefined
               The || 0 will make the calculation use 0 if the ? makes it return undefined
               */
-              self.label = Math.round((Audio.speaker?.volume || 0) * 100).toString() + "%"
+              self.label = (Math.round((Audio.speaker?.volume || 0) * 100)).toString() + "%"
             },
             "speaker-changed"
           ]
@@ -113,7 +113,7 @@ export function sideBar(monitor) {
             [
               Brightness,
               function (self, screenValue) {
-                self.label = (Brightness.screenValue * 100).toString() + "%";
+                self.label = (Math.round(Brightness.screenValue * 100)).toString() + "%";
               }
             ],
           ],
@@ -150,7 +150,7 @@ export function sideBar(monitor) {
           [
             Battery,
             function (self) {
-              self.label = (Battery.percent).toString() + "%";
+              self.label = (Math.round(Battery.percent)).toString() + "%";
             },
           ],
         ],
