@@ -4,15 +4,14 @@ import { Hyprland } from "resource:///com/github/Aylur/ags/service/hyprland.js";
 import { Settings } from "./settings.js"
 
 export function topBar(monitor) {
-  function label(monitor) {
-    const labelLabel = Widget.Label({
-      label: "this is monitor " + monitor,
-    });
+  const logo = Widget.Label({
+    classNames: ["icon", Settings.topBar.logo.color],
+    label: Settings.topBar.logo.text
+  })
 
-    return labelLabel;
-  }
+  const workspaces = Widget.Box({
 
-  
+  })
 
   const clock = Widget.Button({
     child: Widget.Label({
@@ -30,7 +29,14 @@ export function topBar(monitor) {
   });
 
   const start = Widget.Box({
-    
+    vertical: false,
+    spacing: 20,
+    vpack: "center",
+    hpack: "start",
+    children: [
+      logo,
+      workspaces
+    ]
   })
 
   const window = Widget.Window({
