@@ -62,6 +62,13 @@ I use `yay` to easily install aur packages.
      - `gnome-bluetooth-3.0` (NOT the same as `gnome-bluetooth`)
        - (this is NOT one of gnome's bloatware, its an important bluetooth backend thingy)
 
+### Graphics
+
+Some software needs vulkan, for my hardware (integrated graphics + intel cpu), these are the packages I use:
+
+- `vulkan-intel` - intel vulkan driver, no "setup" required
+  - I just installed it through pacman, and relaunched an app (godot) that didn't work before, and now it works
+
 ### Bluetooth
 
 - `bluez` - bluetooth
