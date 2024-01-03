@@ -29,6 +29,10 @@ export function topBar(monitor) {
     }),
   });
 
+  const start = Widget.Box({
+    
+  })
+
   const window = Widget.Window({
     monitor: monitor,
     name: `topBar${monitor}`,
@@ -38,7 +42,7 @@ export function topBar(monitor) {
     child: Widget.CenterBox({
       vertical: false,
       spacing: 8,
-      /*start_widget: start,*/
+      start_widget: start,
       center_widget: clock,
     }),
   });

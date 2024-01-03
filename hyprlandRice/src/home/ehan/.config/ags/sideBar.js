@@ -183,8 +183,18 @@ export function sideBar(monitor) {
   const start = Widget.Box({
     vertical: true,
     spacing: 20,
+    vpack: "start",
     children: [volume, brightness],
   });
+
+  const end = Widget.Box({
+    vertical: true,
+    spacing: 20,
+    vpack: "end",
+    children: [
+      battery
+    ]
+  })
 
   const window = Widget.Window({
     monitor: monitor,
@@ -198,7 +208,7 @@ export function sideBar(monitor) {
       spacing: 8,
       start_widget: start,
       /*center_widget: */
-      end_widget: battery,
+      end_widget: end,
     }),
   });
 
