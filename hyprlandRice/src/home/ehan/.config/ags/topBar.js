@@ -5,7 +5,7 @@ import { Settings } from "./settings.js"
 
 export function topBar(monitor) {
   const logo = Widget.Label({
-    classNames: ["icon", Settings.topBar.logo.color],
+    classNames: ["logo", "icon", Settings.topBar.logo.color],
     label: Settings.topBar.logo.text
   })
 

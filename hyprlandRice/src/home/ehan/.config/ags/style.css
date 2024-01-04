@@ -83,12 +83,25 @@
 .bg1 { background-color: @bg1; }
 .bg0 { background-color: @bg0; }
 
-.sideBar {
-  background: transparent;
+button,
+button label {
+  background: @bg1;
+  color: @fg;
+  border-radius: 0.8rem;
+  border: none;
+  outline: none;
+  opacity: 1;
+  box-shadow: none;
 }
 
-.sideBar label {
-  min-width: 4rem;
+button:hover,
+button:hover label {
+  background: @bg1;
+  color: @primary;
+  border: none;
+  outline: none;
+  opacity: 1;
+  box-shadow: none;
 }
 
 progressbar,
@@ -114,6 +127,14 @@ progressbar trough {
 progressbar progress {
   background: @primary;
   border: none;
+}
+
+.sideBar {
+  background: transparent;
+}
+
+.sideBar label {
+  min-width: 4rem;
 }
 
 .sideBar .volume.amp label,
@@ -154,23 +175,6 @@ progressbar progress {
   background: @bg1;
 }
 
-button,
-button label {
-  background: @bg1;
-  color: @fg;
-  border-radius: 0.8rem;
-  border: none;
-  outline: none;
-  opacity: 1;
-  box-shadow: none;
-}
-
-button:hover,
-button:hover label {
-  background: @bg1;
-  color: @primary;
-  border: none;
-  outline: none;
-  opacity: 1;
-  box-shadow: none;
+.topBar .logo {
+  padding: 2px 20px;
 }

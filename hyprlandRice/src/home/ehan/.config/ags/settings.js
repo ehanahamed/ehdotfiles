@@ -1,7 +1,7 @@
 export var Settings = {
   topBar: {
     logo: {
-      text: "",
+      text: " Eham",
       color: "cyan"
       /*
       color option above uses color classes from style.css
