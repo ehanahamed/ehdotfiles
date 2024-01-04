@@ -109,7 +109,8 @@ Some software needs vulkan, for my hardware (integrated graphics + intel cpu), t
  - `audacity` - audio recording, editing, etc
 
 ### gtk & stuff
- - `lxappearance` - super useful
+ - `nwg-look` (AUR) - super useful gtk settings editor
+  - it "just works" (change settings and click apply, and it works, there's no setup or script or complex config)
  - `gnome-themes-extra` - needed for gtk themes to work i think?
  - `catppuccin-gtk-theme-mocha` (AUR) - gtk theme
    - I use `Catppuccin-Mocha-Standard-Lavender-Dark`
