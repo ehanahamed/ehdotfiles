@@ -103,11 +103,11 @@ progressbar progress {
 
 progressbar {
   min-height: 12rem;
-  border: 0.2rem solid @bg1;
+  border: 0.2rem solid @bg0;
 }
 
 progressbar trough {
-  background: @bg1Alt;
+  background: @bg1;
   border: none;
 }
 
