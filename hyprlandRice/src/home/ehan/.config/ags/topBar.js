@@ -1,7 +1,8 @@
 import Widget from "resource:///com/github/Aylur/ags/widget.js";
 import { execAsync } from 'resource:///com/github/Aylur/ags/utils.js'
-import { Hyprland } from "resource:///com/github/Aylur/ags/service/hyprland.js";
-import { Settings } from "./settings.js"
+import Hyprland from 'resource:///com/github/Aylur/ags/service/hyprland.js';
+import { range } from "./js/extraUtils.js";
+import { Settings } from "./settings.js";
 
 export function topBar(monitor) {
   const logo = Widget.Label({
@@ -9,9 +10,27 @@ export function topBar(monitor) {
     label: Settings.topBar.logo.text
   })
 
-  const workspaces = Widget.Box({
+  const dispatch = function (ws) {
+    return Hyprland.sendMessage(`dispatch workspace ${ws}`);
+  }
 
-  })
+  const workspaces = () => Widget.Box({
+    class_name: "workspaces",
+    children: range(
+      1,
+      Settings.topBar.workspaces
+    ).map(
+      i => Widget.Button({
+        attribute: i,
+        label: `${i}`,
+        onClicked: () => dispatch(i),
+        setup: self => self.hook(Hyprland, () => {
+          self.toggleClassName("active", (Hyprland.active.workspace.id === i));
+          self.toggleClassName("open", ((Hyprland.getWorkspace(i)?.windows || 0) > 0));
+        })
+      })
+    ),
+  });
 
   const clock = Widget.Button({
     child: Widget.Label({
@@ -28,18 +47,18 @@ export function topBar(monitor) {
     }),
   });
 
-  const start = Widget.Box({
+  const start = () => Widget.Box({
     vertical: false,
-    spacing: 20,
+    spacing: 0,
     vpack: "center",
     hpack: "start",
     children: [
       logo,
-      workspaces
+      workspaces()
     ]
   })
 
-  const window = Widget.Window({
+  const window = () => Widget.Window({
     monitor: monitor,
     name: `topBar${monitor}`,
     anchor: ["top", "left", "right"],
@@ -48,10 +67,10 @@ export function topBar(monitor) {
     child: Widget.CenterBox({
       vertical: false,
       spacing: 8,
-      start_widget: start,
+      start_widget: start(),
       center_widget: clock,
     }),
   });
 
-  return window;
+  return window();
 }

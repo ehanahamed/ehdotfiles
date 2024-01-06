@@ -178,3 +178,36 @@ progressbar progress {
 .topBar .logo {
   padding: 2px 20px;
 }
+
+.workspaces button {
+  padding: 0.2rem;
+}
+
+.workspaces,
+.workspaces * {
+  color: @bg2;
+}
+
+.workspaces .open,
+.workspaces .open * {
+  color: @fg;
+}
+
+.workspaces .active,
+.workspaces .active *,
+.workspaces .active.open,
+.workspaces .active.open * {
+  color: @primary;
+}
+
+.workspaces:hover,
+.workspaces *:hover,
+.workspaces .open:hover,
+.workspaces .open:hover *,
+.workspaces .active:hover,
+.workspaces .active:hover *,
+.workspaces .active.open:hover,
+.workspaces .active.open:hover * {
+  color: @primaryAlt;
+}
+
