@@ -185,7 +185,7 @@ progressbar progress {
 
 .workspaces,
 .workspaces * {
-  color: @bg2;
+  color: @bg3;
 }
 
 .workspaces .open,
@@ -210,4 +210,3 @@ progressbar progress {
 .workspaces .active.open:hover * {
   color: @primaryAlt;
 }
-
