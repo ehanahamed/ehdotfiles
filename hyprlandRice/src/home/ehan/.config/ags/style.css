@@ -185,7 +185,7 @@ progressbar progress {
 
 .workspaces,
 .workspaces * {
-  color: @bg3;
+  color: @bg2;
 }
 
 .workspaces .open,
