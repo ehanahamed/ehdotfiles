@@ -1,6 +1,7 @@
+import App from "resource:///com/github/Aylur/ags/app.js"
 import Widget from "resource:///com/github/Aylur/ags/widget.js";
-import { execAsync } from 'resource:///com/github/Aylur/ags/utils.js'
-import Hyprland from 'resource:///com/github/Aylur/ags/service/hyprland.js';
+import { execAsync } from "resource:///com/github/Aylur/ags/utils.js"
+import Hyprland from "resource:///com/github/Aylur/ags/service/hyprland.js";
 import { range } from "./js/extraUtils.js";
 import { Settings } from "./settings.js";
 
@@ -33,6 +34,9 @@ export function topBar(monitor) {
   });
 
   const clock = Widget.Button({
+    on_clicked: function () {
+      App.toggleWindow(`dashboard${monitor}`)
+    },
     child: Widget.Label({
     class_name: 'clock',
     setup: function (self) {
@@ -73,4 +77,30 @@ export function topBar(monitor) {
   });
 
   return window();
+}
+
+export function dashboard(monitor) {
+  const window = () => Widget.Window({
+    monitor: monitor,
+    name: `dashboard${monitor}`,
+    exclusivity: "ignore",
+    layer: "top",
+    popup: true,
+    focusable: true,
+    anchor: ["top"],
+    margins: [50,0],
+    class_names: ["dashboard"],
+    child: Widget.Box({
+      vertical: false,
+      spacing: 8,
+      children: [
+        Widget.Calendar({
+          showDayNames: true,
+          showHeading: true,      
+        })
+      ]
+    })
+  });
+
+  return window()
 }

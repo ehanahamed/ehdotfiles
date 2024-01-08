@@ -210,3 +210,32 @@ progressbar progress {
 .workspaces .active.open:hover * {
   color: @primaryAlt;
 }
+
+.dashboard {
+  background: @bg1;
+  border-radius: 0.8rem;
+}
+
+.dashboard calendar {
+  font-size: 1.4rem;
+  border: none;
+  background: @bg1;
+  padding: 0.4rem;
+  border-radius: 0.8rem;
+}
+
+.dashboard calendar:selected {
+  color: @primary;
+}
+
+.dashboard calendar.header {
+  color: @fg;
+}
+
+.dashboard calendar.highlight {
+  color: @bg3;
+}
+
+.dashboard calendar:indeterminate {
+  color: @bg2;
+}

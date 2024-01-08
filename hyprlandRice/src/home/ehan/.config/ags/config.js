@@ -1,12 +1,13 @@
 import App from 'resource:///com/github/Aylur/ags/app.js';
 import { forMonitors } from "./js/extraUtils.js";
-import { topBar } from "./topBar.js";
+import { topBar, dashboard } from "./topBar.js";
 import { sideBar } from "./sideBar.js";
 
 const windows = function () {
   return [
     forMonitors(topBar),
-    forMonitors(sideBar)
+    forMonitors(sideBar),
+    forMonitors(dashboard)
   ]
 };
 
