@@ -216,12 +216,18 @@ progressbar progress {
   border-radius: 0.8rem;
 }
 
+.dashboard > * {
+  background: @bg1;
+  border-radius: 0.8rem;
+  border: 0.2rem solid @bg2;
+}
+
 .dashboard calendar {
   font-size: 1.4rem;
-  border: none;
   background: @bg1;
   padding: 0.4rem;
   border-radius: 0.8rem;
+  border: none;
 }
 
 .dashboard calendar:selected {

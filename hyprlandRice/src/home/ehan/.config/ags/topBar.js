@@ -87,6 +87,7 @@ export function dashboard(monitor) {
     layer: "top",
     popup: true,
     focusable: true,
+    visible: false,
     anchor: ["top"],
     margins: [50,0],
     class_names: ["dashboard"],
