@@ -1,6 +1,6 @@
 * {
   font-family: "NotoSansM Nerd Font Propo";
-  font-size: 16px;
+  font-size: 18px;
   color: #a3a3cc;
 }
 
@@ -107,8 +107,8 @@ button:hover label {
 progressbar,
 progressbar trough,
 progressbar progress {
-  border-radius: 0.6rem;
-  min-width: 2rem;
+  border-radius: 0.8rem;
+  min-width: 1.6rem;
   outline: none;
   opacity: 1;
   box-shadow: none;
@@ -217,6 +217,7 @@ progressbar progress {
 }
 
 .dashboard > * {
+  padding: 0.6rem;
   background: @bg1;
   border-radius: 0.8rem;
   border: 0.2rem solid @bg2;
@@ -225,7 +226,7 @@ progressbar progress {
 .dashboard calendar {
   font-size: 1.4rem;
   background: @bg1;
-  padding: 0.4rem;
+  padding: 0.6rem;
   border-radius: 0.8rem;
   border: none;
 }
@@ -244,4 +245,35 @@ progressbar progress {
 
 .dashboard calendar:indeterminate {
   color: @bg2;
+}
+
+menu {
+  font-size: 1rem;
+  color: @fg;
+  background: @bg1;
+  border-radius: 0.8rem;
+  border: 0.2rem solid @bg2;
+}
+
+menu menuitem {
+  font-size: 1rem;
+  color: @fg;
+  background: @bg1;
+  border-radius: 0.8rem;
+  border: none;
+}
+
+menu menuitem * {
+  font-size: 1rem;
+  color: @fg;
+}
+
+menu menuitem:hover,
+menu menuitem:hover * {
+  color: @primary;
+}
+
+menu separator {
+  background: @bg2;
+  min-height: 0.2rem;
 }

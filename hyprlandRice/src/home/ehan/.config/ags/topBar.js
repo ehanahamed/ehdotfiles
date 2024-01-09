@@ -2,6 +2,7 @@ import App from "resource:///com/github/Aylur/ags/app.js"
 import Widget from "resource:///com/github/Aylur/ags/widget.js";
 import { execAsync } from "resource:///com/github/Aylur/ags/utils.js"
 import Hyprland from "resource:///com/github/Aylur/ags/service/hyprland.js";
+import SystemTray from 'resource:///com/github/Aylur/ags/service/systemtray.js'
 import { range } from "./js/extraUtils.js";
 import { Settings } from "./settings.js";
 
@@ -51,6 +52,18 @@ export function topBar(monitor) {
     }),
   });
 
+  const systrayItem = item => Widget.Button({
+    child: Widget.Icon().bind('icon', item, 'icon'),
+    tooltipMarkup: item.bind('tooltip-markup'),
+    onPrimaryClick: (_, event) => item.activate(event),
+    onSecondaryClick: (_, event) => item.openMenu(event),
+  });
+
+  const systray = Widget.Box({
+    hpack: "end"
+  })
+    .bind('children', SystemTray, 'items', i => i.map(systrayItem))
+
   const start = () => Widget.Box({
     vertical: false,
     spacing: 0,
@@ -73,6 +86,7 @@ export function topBar(monitor) {
       spacing: 8,
       start_widget: start(),
       center_widget: clock,
+      end_widget: systray
     }),
   });
 
