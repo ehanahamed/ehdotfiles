@@ -8,7 +8,7 @@ export var Settings = {
       those color classes use the defined colors, also in style.css
       */
     },
-    workspaces: 6,
+    workspaces: 8,
     clock: {
       format: "+%Y/%m/%d %H:%M"
     }

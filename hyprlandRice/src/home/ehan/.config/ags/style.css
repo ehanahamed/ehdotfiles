@@ -96,7 +96,7 @@ button label {
 
 button:hover,
 button:hover label {
-  background: @bg1;
+  background: @bg1Alt;
   color: @primary;
   border: none;
   outline: none;
@@ -271,6 +271,7 @@ menu menuitem * {
 menu menuitem:hover,
 menu menuitem:hover * {
   color: @primary;
+  background: @bg1Alt;
 }
 
 menu separator {
