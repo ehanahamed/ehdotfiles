@@ -39,6 +39,15 @@ I use `yay` to easily install aur packages.
   - to setup, enable `ly.service` (`systemctl enable ly.service`)
   - I customized the colors using `mkinitcpio-colors`, see [`etc/mkinitcpio.conf.md`](./src/etc/mkinitcpio.conf.md)  
 
+### Internet & wifi
+- `networkmanager`
+  - its commands are `nmcli` and `nmtui`
+    - if you wanna really quickly setup wifi use `nmtui`
+  - if you installed it correctly, it will automatically reconnect to your wifi after you log in to one once
+
+- while installing archlinux you'll by default be able to use a command called `iwctl`
+  - before being able to install networkmanager, you'll be "forced" to use `iwctl`, read its archwiki page to figure it out ig
+
 ### Window Manager & Stuff
 
  - `hyprland` - wm
