@@ -95,6 +95,9 @@ Some software needs vulkan, for my hardware (integrated graphics + intel cpu), t
  - `pipewire-pulse` - [audio & stuff](./src/audio.md)
  - `pulsemixer` - volume control tui
  - `pamixer` - needed for `ags` to work
+ - `sof-firmware` - needed for audio to work at all
+   - you might or might not need it depending on your hardware, search archwiki for more info
+   - if you see "dummy output" without this, try installing it or if that doesnt work either try installing the other firmware package, i forgor (search for "sof-firmware", "audio firmware", etc in archwiki)
 
 ### Extra stuff
 
@@ -107,6 +110,11 @@ Some software needs vulkan, for my hardware (integrated graphics + intel cpu), t
  - `starship` - shell prompt
  - `pavucontrol` - audio gui
  - `audacity` - audio recording, editing, etc
+ - `git` - version control, need it for everything
+   - btw the command to set email & username is:
+     - `git config --global user.name "name goes here"`
+     - `git config --global user.email "email@ehan.dev"`
+     - this isnt for logging in, its for the info that gets attached to the actual git commits
 
 ### gtk & stuff
  - `nwg-look` (AUR) - super useful gtk settings editor
