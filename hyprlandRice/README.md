@@ -81,8 +81,9 @@ Some software needs vulkan, for my hardware (integrated graphics + intel cpu), t
 ### Bluetooth
 
 - `bluez` - bluetooth
+  - after installing, enable `bluetooth.service` (`systemctl enable bluetooth.service`)
 - `bluez-utils` - bluetooth, also, it provides `bluetoothctl`
-- something else i forgor
+- `blueman` - bluetooth gui
 
 ### Permissions, polkit, keyring, etc
 
