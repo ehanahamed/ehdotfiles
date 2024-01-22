@@ -129,15 +129,19 @@ Some software needs vulkan, for my hardware (integrated graphics + intel cpu), t
 ### gtk & stuff
  - `nwg-look` (AUR) - super useful gtk settings editor
   - it "just works" (change settings and click apply, and it works, there's no setup or script or complex config)
+  - its named "GTK Settings" in most app launchers
  - `gnome-themes-extra` - needed for gtk themes to work i think?
  - `catppuccin-gtk-theme-mocha` (AUR) - gtk theme
    - I use `Catppuccin-Mocha-Standard-Lavender-Dark`
-   - I set the `$GTK_THEME` env variable in [`~/.config/hypr/hyprland.conf`](./src/home/ehan/.config/hypr/hyprland.conf)
-     - Some line in my `hyprland.conf` has `env = GTK_THEME...`
+   - Set it using `nwg-look`
+   - OR, WITHOUT `nwg-look`, set the `$GTK_THEME` env variable in `hyprland.conf`
+     - `env = GTK_THEME,Catppuccin-Mocha-Standard-Lavender-Dark`
+     - do NOT do this if you're using nwg-look
  - `papirus-icon-theme-git` (AUR) - icon theme
-   - I set the icon theme using by running `gsettings set org.gnome.desktop.interface icon-theme Papirus-Dark` (which gets ran automatically in hyprland.conf too)
-    - Even though it says `gnome.desktop...`, it has nothing to do with gnome, I use hyprland, there is no gnome here.
-    - Some line in my `hyprland.conf` has `exec-once = gsettings set...`
+   - Set it using `nwg-look`
+   - OR, WITHOUT `nwg-look`
+     - add `exec-once = gsettings set org.gnome.desktop.interface icon-theme Papirus-Dark` to your `hyprland.conf`
+     - only do that if you do NOT use nwg-look
 
 ### Theming the virtual console (terminal before login, during boot)
 
