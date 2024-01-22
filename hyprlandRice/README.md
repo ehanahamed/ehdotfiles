@@ -159,7 +159,11 @@ Some software needs vulkan, for my hardware (integrated graphics + intel cpu), t
 
 - `fcitx5` - input method framework
   - lets you switch keyboard layouts & use different alphabets/languages (like Bangla, Chinese, Russian, etc)
+- `fcitx5-qt` - even if you think you don't use qt, some apps secretly do
+- `fcitx5-gtk` - even if you think you don't use gtk, some apps secretly do
 - `fcitx5-configtool` - optional gui settings menu for fcitx5
+  - named "Fcitx5 Configuration" in app launchers
+  - the menu on the right has a list of keyboard layouts, uncheck "only show current language" to search through more, use the left arrow button in the center to add a layout selected in that list to your "group"/list of "enabled" layouts, on the left (its not obvious at first)
 - `fcitx5-chinese-addons` - pinyin and table input method for fcitx5
 
 btw, there are seperate things that fcitx5 doesn't control (explained below)
