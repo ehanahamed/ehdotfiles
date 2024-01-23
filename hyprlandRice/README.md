@@ -157,8 +157,13 @@ Some software needs vulkan, for my hardware (integrated graphics + intel cpu), t
 
 ### Fonts
 
- - `ttf-noto-nerd`
-   - I use `NotoSansM Nerd Font Propo` in ~~waybar and other~~ stuff
+- `ttf-noto-nerd`
+  - I use `NotoSansM Nerd Font Propo` in ~~waybar and other~~ stuff
+- `noto-fonts-cjk` - for more languages to work
+  - for chinese, japanese, korean + more characters/"letters"
+  - Install it (through pacman) and then reboot, and it "just works"
+    - even in a web browser for example, just installing it and rebooting fixes any "question mark blocks" or "unknown characters" from other languages
+  - it doesn't "break" other languages, like russian or bangla for example, those alphabets will also work with this font
 
 ### Input & other languages
 
