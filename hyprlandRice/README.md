@@ -159,8 +159,15 @@ Some software needs vulkan, for my hardware (integrated graphics + intel cpu), t
 
 - `ttf-noto-nerd`
   - I use `NotoSansM Nerd Font Propo` in ~~waybar and other~~ stuff
-- `noto-fonts-cjk` - for more languages to work
-  - for chinese, japanese, korean + more characters/"letters"
+
+to get all characters/"letters" to work (across different apps too), you also need:
+
+- `noto-fonts-emoji` - emojis
+  - Install it (through pacman) and then reboot, and it "just works"
+    - no setup or settings-changing needed, all apps "just automatically work" after installing & rebooting
+  - Without it, emojis appear as blank squares or question mark blocks
+- `noto-fonts-cjk` - more languages/alphabets
+  - for chinese, japanese, korean, + more
   - Install it (through pacman) and then reboot, and it "just works"
     - even in a web browser for example, just installing it and rebooting fixes any "question mark blocks" or "unknown characters" from other languages
   - it doesn't "break" other languages, like russian or bangla for example, those alphabets will also work with this font
