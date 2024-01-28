@@ -122,6 +122,7 @@ Some software needs vulkan, for my hardware (integrated graphics + intel cpu), t
  - `audacity` - audio recording, editing, etc
  - `bottom` - graphical "task manager"
    - its command is `btm`
+ - `hyprpicker` - useful color picker
  - `git` - version control, need it for everything
    - btw the command to set email & username is:
      - `git config --global user.name "name goes here"`
