@@ -162,7 +162,7 @@ Some software needs vulkan, for my hardware (integrated graphics + intel cpu), t
 - `ttf-noto-nerd`
   - I use `NotoSansM Nerd Font Propo` in ~~waybar and other~~ stuff
 
-to get all characters/"letters" to work (across different apps too), you also need:
+to get all letters, alphabets, & emojis to work, I installed:
 
 - `noto-fonts-emoji` - emojis
   - Install it (through pacman) and then reboot, and it "just works"
@@ -173,6 +173,7 @@ to get all characters/"letters" to work (across different apps too), you also ne
   - Install it (through pacman) and then reboot, and it "just works"
     - even in a web browser for example, just installing it and rebooting fixes any "question mark blocks" or "unknown characters" from other languages
   - it doesn't "break" other languages, like russian or bangla for example, those alphabets will also work with this font
+- `noto-fons` - noto emoji has problems without this
 
 ### Input & other languages
 
