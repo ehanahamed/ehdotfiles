@@ -9,10 +9,6 @@ hyprland rice
 - move from wofi to ags
   - add emoji stuff to ags
   - move clipboard stuff to ags
-- printer stuff
-  - document & implement
-  - CUPS
-  - system-config-printer (https://github.com/OpenPrinting/system-config-printer) for CUPS
 - rerun ags when new monitor added
   - https://wiki.hyprland.org/0.22.0beta/FAQ/#how-do-i-move-my-favorite-workspaces-to-a-new-monitor-when-i-plug-it-in
 
@@ -108,6 +104,17 @@ Some software needs vulkan, for my hardware (integrated graphics + intel cpu), t
  - `sof-firmware` - needed for audio to work at all
    - you might or might not need it depending on your hardware, search archwiki for more info
    - if you see "dummy output" without this, try installing it or if that doesnt work either try installing the other firmware package, i forgor (search for "sof-firmware", "audio firmware", etc in archwiki)
+
+### Printers & stuff
+
+  - `cups` - OpenPrinting CUPS (Common Unix Printing System)
+    - after installing, enable `cups.service` (`systemctl enable cups.service`)
+  - `system-config-printer` (https://github.com/OpenPrinting/system-config-printer) gui settings for CUPS
+
+  - for my specific printer
+    - `hplip` - for HP printers
+      - install it with pacman, and then open system-config-printer (labeled "Print Settings" in most app launchers)
+      - then setup your printer(s) and hplip will appear as an option under stuff in system-config-printer after you installed `hplip` 
 
 ### Extra stuff
 
