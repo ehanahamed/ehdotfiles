@@ -135,6 +135,8 @@ Some software needs vulkan, for my hardware (integrated graphics + intel cpu), t
      - `git config --global user.name "name goes here"`
      - `git config --global user.email "email@ehan.dev"`
      - this isnt for logging in, its for the info that gets attached to the actual git commits
+ - `kdenlive` - open source video editor
+   - to get dark theme(s), install `breeze` (theme thingy for kde apps like kdenlive)
 
 ### gtk & stuff
  - `nwg-look` (AUR) - super useful gtk settings editor
@@ -152,6 +154,7 @@ Some software needs vulkan, for my hardware (integrated graphics + intel cpu), t
    - OR, WITHOUT `nwg-look`
      - add `exec-once = gsettings set org.gnome.desktop.interface icon-theme Papirus-Dark` to your `hyprland.conf`
      - only do that if you do NOT use nwg-look
+ - `breeze` - theme thingy for kde apps
 
 ### Theming the virtual console (terminal before login, during boot)
 
