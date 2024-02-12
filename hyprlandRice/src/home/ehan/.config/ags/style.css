@@ -164,11 +164,11 @@ progressbar progress {
 }
 
 .sideBar .battery.charging.low label {
-  color: @orange;
+  color: @green;
 }
 
 .sideBar .battery.charging.low progressbar progress {
-  background: @orange;
+  background: @green;
 }
 
 .topBar {
