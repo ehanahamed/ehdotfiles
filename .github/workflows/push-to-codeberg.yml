@@ -9,5 +9,5 @@ jobs:
         run: git clone https://github.com/ehanahamed/dotfiles.git
       - name: Push to Codeberg
         run: |
-          cd quizfreely
+          cd dotfiles
           git push https://ehanahamed:${{ secrets.CODEBERG_TOKEN }}@codeberg.org/ehanahamed/dotfiles.git --all
