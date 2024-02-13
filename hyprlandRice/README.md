@@ -156,6 +156,7 @@ Some software needs vulkan, for my hardware (integrated graphics + intel cpu), t
      - add `exec-once = gsettings set org.gnome.desktop.interface icon-theme Papirus-Dark` to your `hyprland.conf`
      - only do that if you do NOT use nwg-look
  - `breeze` - theme thingy for kde apps
+   - it also has cursor themes and stuff, you can set that using `nwg-look`
 
 ### Theming the virtual console (terminal before login, during boot)
 
