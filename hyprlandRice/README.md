@@ -137,6 +137,7 @@ Some software needs vulkan, for my hardware (integrated graphics + intel cpu), t
      - this isnt for logging in, its for the info that gets attached to the actual git commits
  - `kdenlive` - open source video editor
    - to get dark theme(s), install `breeze` (theme thingy for kde apps like kdenlive)
+ - `obs-studio` - its great for screen recording too
 
 ### gtk & stuff
  - `nwg-look` (AUR) - super useful gtk settings editor
