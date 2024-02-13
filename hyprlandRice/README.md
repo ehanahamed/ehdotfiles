@@ -197,6 +197,11 @@ to get all letters, alphabets, & emojis to work, I installed:
   - the menu on the right has a list of keyboard layouts, uncheck "only show current language" to search through more, use the left arrow button in the center to add a layout selected in that list to your "group"/list of "enabled" layouts, on the left (its not obvious at first)
 - `fcitx5-chinese-addons` - pinyin and table input method for fcitx5
 
+### Themeing fcitx5
+
+- I use `Catppuccin fcitx5`, see https://github.com/catppuccin/fcitx5
+  - Super simple to setup after installing fcitx5, follow the instructions on catppuccin/fcitx5's github readme
+
 btw, there are seperate things that fcitx5 doesn't control (explained below)
 
 I use `altgr-intl` keyboard layout variant through fcitx5, but also without fcitx5 by setting `kb_variant` in `hyprland.conf`, see https://wiki.hyprland.org/Configuring/Variables/#input
