@@ -92,6 +92,7 @@ Some software needs vulkan, for my hardware (integrated graphics + intel cpu), t
    - see [`https://wiki.archlinux.org/title/GNOME/Keyring#Launching_gnome-keyring-daemon_outside_desktop_environments_(KDE,_GNOME,_XFCE,_...)`](https://wiki.archlinux.org/title/GNOME/Keyring#Launching_gnome-keyring-daemon_outside_desktop_environments_(KDE,_GNOME,_XFCE,_...))
      - I added `dbus-update-activation-environment --all` and `gnome-keyring-daemon --start --components=secrets` as `exec-once`s in my `hyprland.conf`
  - `seahorse` - gui for keyring thingy
+ - `xorg-xhost` - some apps using xwayland need it for polkit to work, but don't require it as a dependency
 
 ### Audio
 
@@ -104,6 +105,7 @@ Some software needs vulkan, for my hardware (integrated graphics + intel cpu), t
  - `sof-firmware` - needed for audio to work at all
    - you might or might not need it depending on your hardware, search archwiki for more info
    - if you see "dummy output" without this, try installing it or if that doesnt work either try installing the other firmware package, i forgor (search for "sof-firmware", "audio firmware", etc in archwiki)
+ - `playerctl` - media controls, required for my media keybinds in hyprland.conf
 
 ### Printers & stuff
 
@@ -138,6 +140,9 @@ Some software needs vulkan, for my hardware (integrated graphics + intel cpu), t
  - `kdenlive` - open source video editor
    - to get dark theme(s), install `breeze` (theme thingy for kde apps like kdenlive)
  - `obs-studio` - its great for screen recording too
+ - `guvcview` - camera settings stuff
+ - `gparted` - partitions
+ - 
 
 ### gtk & stuff
  - `nwg-look` (AUR) - super useful gtk settings editor
