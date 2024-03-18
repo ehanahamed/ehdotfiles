@@ -51,6 +51,8 @@ I use `yay` to easily install aur packages.
  - `xdg-desktop-portal-wlr` - xdg stuff
  - `hyprpaper` - wallpaper utility
  - `kitty` - terminal
+ - `hyprlock` (AUR) - lockscreen (see `~/.config/hypr/hyprlock.conf` for config)
+ - `hypridle` (AUR) - idle actions thingy (see `~/.config/hypr/hypridle.conf` for config)
  - `tofi` (AUR) - menu & launcher
    - see [`~/.config/tofi/config`](./src/home/ehan/.config/tofi/config)
  - `hyprshot` (AUR) - screenshot utility
@@ -66,6 +68,7 @@ I use `yay` to easily install aur packages.
      - `pavucontrol` - NOT actually needed, but some buttons are supposed to launch pavucontrol
      - `gnome-bluetooth-3.0` (NOT the same as `gnome-bluetooth`)
        - (this is NOT one of gnome's bloatware, its an important bluetooth backend thingy)
+ - `ntp` - network time psomething & ntpd something for time sync-ing
 
 ### Graphics
 
