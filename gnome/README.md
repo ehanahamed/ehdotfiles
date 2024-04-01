@@ -13,3 +13,5 @@ all the packages in `hyprlandRice/`, plus:
 ly and fcitx5, mentioned above, are explained in `hyprlandRice/`
 
 For `gnome-shell-extension-kimpanel-git` with fcitx5, I installed `fcitx5`, `fcitx5-gtk`, `fcitx5-qt`, `fcitx5-configtool`, and `fcitx5-chinese-addons`, which was explained in `hyprlandRice/`
+
+For keyboard shortcuts, sometimes you need to use dconf editor (like for multiple shorcuts, single-key shorcuts (like for pop shell), etc)
