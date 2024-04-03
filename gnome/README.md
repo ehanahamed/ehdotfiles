@@ -1,19 +1,31 @@
-all the packages in `hyprlandRice/`, plus:
-
+- `networkmanager`
+- `sof-firmware`
+- `bluez`
+- `bluez-utils`
+- `pulsemixer`
 - `gnome`
-  - this package group includes gdm
+  - this package group includes `gdm`
     - run `systemctl enable gdm.service` to enable gdm
-    - if you had ly from the hyprland rice, disable ly.service first
+- https://github.com/catppuccin/gtk
 - `gnome-extra`
 - `gnome-shell-extension-forge` (AUR)
 - `gnome-shell-extension-blur-my-shell` (AUR)
+- `fcitx5`
+- `fcitx5-qt`
+- `fcitx5-gtk`
+- `fcitx5-configtool`
 - `gnome-shell-extension-kimpanel-git` (AUR)
   - for fcitx5
     - btw you need gdm enabled for fcitx5 to autostart
+- `blackbox-terminal`
+- https://github.com/catppuccin/blackbox
 
-ly and fcitx5, mentioned above, are explained in `hyprlandRice/`
-
-For `gnome-shell-extension-kimpanel-git` with fcitx5, I installed `fcitx5`, `fcitx5-gtk`, `fcitx5-qt`, `fcitx5-configtool`, and `fcitx5-chinese-addons`, which was explained in `hyprlandRice/`
+- `blueman`
+- `kdenlive`
+- `gparted`
+- `guvcview`
+- `fcitx5-chinese-addons`
+- `vulkan-intel`
 
 For fcitx5, i disabled the input source keyboard shorcuts from gnome's settings, so that the shortcuts from fcitx5's settings work.
 
