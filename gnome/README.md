@@ -1,3 +1,4 @@
+packages
 - `networkmanager`
 - `sof-firmware`
 - `bluez`
@@ -20,6 +21,7 @@
 - `blackbox-terminal`
 - https://github.com/catppuccin/blackbox
 
+extra stuff
 - `blueman`
 - `kdenlive`
 - `gparted`
