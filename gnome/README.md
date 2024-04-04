@@ -12,7 +12,9 @@ packages
 - `gnome-shell-extension-pop-shell` (AUR)
 - `gnome-shell-extension-blur-my-shell` (AUR)
 - `gnome-shell-extension-dash-to-panel`
-  - by default gnome is annoying with multiple monitors, this extension makes everything better
+  - this extension has lots of settings to alter the top bar thingy
+  - by default, gnome only shows the top bar on your primary monitor, with this extension i have it on all monitors
+  - you can save & load config files, my config is at [`gnome/dash-to-panel-config`](./dash-to-panel-config)
 - `fcitx5`
 - `fcitx5-qt`
 - `fcitx5-gtk`
