@@ -9,15 +9,17 @@ packages
     - run `systemctl enable gdm.service` to enable gdm
 - https://github.com/catppuccin/gtk
 - `gnome-extra`
-- `gnome-shell-extension-forge` (AUR)
+- `gnome-shell-extension-pop-shell` (AUR)
 - `gnome-shell-extension-blur-my-shell` (AUR)
+- `gnome-shell-extension-dash-to-panel`
+  - by default gnome is annoying with multiple monitors, this extension makes everything better
 - `fcitx5`
 - `fcitx5-qt`
 - `fcitx5-gtk`
 - `fcitx5-configtool`
 - `gnome-shell-extension-kimpanel-git` (AUR)
   - for fcitx5
-    - btw you need gdm enabled for fcitx5 to autostart
+    - gdm and sddm autostart fcitx5 correctly, ly doesn't
 - `blackbox-terminal`
 - https://github.com/catppuccin/blackbox
 
