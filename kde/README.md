@@ -12,6 +12,8 @@ packages
 - `fcitx5-gtk`
 - `fcitx5-configtool`
 - https://github.com/catppuccin/fcitx5
+- `blackbox-terminal`
+- https://github.com/catppuccin/blackbox
 
 extra stuff
 - `blueman`
