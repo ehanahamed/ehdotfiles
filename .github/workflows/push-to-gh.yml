@@ -6,8 +6,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Clone from Codeberg
-        run: git clone https://codeberg.org/ehanahamed/dotfiles.git
+        run: git clone https://codeberg.org/ehanahamed/ehdotfiles.git
       - name: Push to GitHub
         run: |
           cd dotfiles
-          git push https://ehanahamed:${{ secrets.GH_TOKEN }}@github.com/ehanahamed/dotfiles.git --all
+          git push https://ehanahamed:${{ secrets.GH_TOKEN }}@github.com/ehanahamed/ehdotfiles.git --all
