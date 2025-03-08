@@ -9,5 +9,5 @@ jobs:
         run: git clone https://github.com/ehanahamed/ehdotfiles.git
       - name: Push to Codeberg
         run: |
-          cd dotfiles
+          cd ehdotfiles
           git push https://ehanahamed:${{ secrets.CODEBERG_TOKEN }}@codeberg.org/ehanahamed/ehdotfiles.git --all
