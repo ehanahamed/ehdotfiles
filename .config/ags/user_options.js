@@ -11,11 +11,11 @@ const userConfigOptions = {
         // See https://docs.gtk.org/glib/method.DateTime.format.html
         // Here's the 12h format: "%I:%M%P"
         // For seconds, add "%S" and set interval to 1000
-        'format': "%H:%M:%S",
+        'format': "%H:%M",
         'interval': 1000,
-        'dateFormatLong': "Y-%m-%d %b WV-%u %a", // On bar
+        'dateFormatLong': "%Y-%m-%d %b W%V-%u %a", // On bar
         'dateInterval': 5000,
-        'dateFormat': "Y-%m-%d WV-%u %a", // On notif time
+        'dateFormat': "%Y-%m-%d W%V %a", // On notif time
     },
 }
 
