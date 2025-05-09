@@ -5,6 +5,7 @@ o.cursorlineopt = 'both' -- to enable cursorline!
 
 vim.opt["tabstop"] = 4
 vim.opt["shiftwidth"] = 4
+vim.g.neovide_cursor_vfx_mode = {"wireframe"}
 
 vim.api.nvim_create_autocmd("BufDelete", {
   callback = function()
@@ -14,4 +15,3 @@ vim.api.nvim_create_autocmd("BufDelete", {
     end
   end,
 })
-
