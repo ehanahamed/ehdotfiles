@@ -1,0 +1,15 @@
+{
+      "vim.useSystemClipboard": true,
+    "vim.smartRelativeLine": true,
+    "vim.highlightedyank.enable": true,
+    "editor.autoClosingBrackets": "never",
+    "vim.normalModeKeyBindings": [
+        {
+            "before": [";"],
+            "after": [":"]
+        }
+    ],
+    "vim.targets.enable": true,
+    "vim.leader": "<space>",
+    "vim.easymotion": true,
+}
