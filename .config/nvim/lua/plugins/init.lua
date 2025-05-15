@@ -21,10 +21,6 @@ return {
     config = function ()
       require("leap").add_default_mappings()
     end
-  },
-  {
-    "tpope/vim-surround",
-    lazy = false
   }
   -- These are some examples, uncomment them if you want to see them work!
 
