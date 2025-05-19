@@ -21,6 +21,10 @@ return {
     config = function ()
       require("leap").add_default_mappings()
     end
+  },
+  {
+    "tpope/vim-fugitive",
+    lazy = false
   }
   -- These are some examples, uncomment them if you want to see them work!
 
