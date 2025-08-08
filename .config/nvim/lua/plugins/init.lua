@@ -25,7 +25,16 @@ return {
   {
     "tpope/vim-fugitive",
     lazy = false
-  }
+  },
+  {
+    "olimorris/codecompanion.nvim",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "nvim-treesitter/nvim-treesitter",
+    },
+    opts = require("configs.codecompanion"),
+    lazy = false
+  },
   -- These are some examples, uncomment them if you want to see them work!
 
   -- test new blink
