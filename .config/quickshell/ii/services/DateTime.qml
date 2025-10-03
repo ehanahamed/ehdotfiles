@@ -24,6 +24,14 @@ Singleton {
             let weekNum = 1 + Math.round(((jsDate - week1) / 86400000 - 3 + ((week1.getDay() + 6) % 7)) / 7);
             dateFmt = dateFmt.replace("{w}", weekNum);
         }
+        if (dateFmt.includes("{wd}")) {
+            let weekday = new Date(clock.date).getDay();
+            if (weekday == 0) {
+                weekday = 7;
+            }
+            dateFmt = dateFmt.replace("{wd}", weekday);
+        }
+
         Qt.locale().toString(clock.date, dateFmt ?? "dddd, dd/MM")
     }
     property string collapsedCalendarFormat: Qt.locale().toString(clock.date, "dd MMMM yyyy")
