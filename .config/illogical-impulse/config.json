@@ -1,6 +1,6 @@
 {
     "time": {
-        "dateFormat": "ddd, dd MMM yyyy, 'W{w}'",
+        "dateFormat": "yyyy-MM-dd MMM 'W{w}-{wd}' ddd",
         "format": "hh:mm"
     }
 }
