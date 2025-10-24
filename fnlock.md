@@ -7,11 +7,11 @@ My keyboard has a fn lock/function lock icon on the escape key, but pressing fn 
 echo 1 | sudo tee /sys/devices/platform/lg-laptop/fn_lock
 ```
 
-and then see if it fixes it, for me it did (yay)
+and then see if it changes it, for me it did (yay)
 
 so to save that after reboot, I created `/etc/udev/rules.d/99-fnlock.rules` and put this:
 ```
 SUBSYSTEM=="platform", DRIVER=="lg-laptop", ATTR{fn_lock}="1"
 ```
 
-and then it worked so i wrote it here for future reference
+and i wrote it here for future reference
