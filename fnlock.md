@@ -15,3 +15,8 @@ SUBSYSTEM=="platform", DRIVER=="lg-laptop", ATTR{fn_lock}="1"
 ```
 
 and i wrote it here for future reference
+
+oh and also dont forget to
+```
+sudo udevadm control --reload
+```
