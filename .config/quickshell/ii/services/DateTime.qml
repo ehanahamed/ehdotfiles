@@ -22,7 +22,7 @@ Singleton {
             jsDate.setDate(jsDate.getDate() + 3 - ((jsDate.getDay() + 6) % 7));
             let week1 = new Date(jsDate.getFullYear(), 0, 4);
             let weekNum = 1 + Math.round(((jsDate - week1) / 86400000 - 3 + ((week1.getDay() + 6) % 7)) / 7);
-            dateFmt = dateFmt.replace("{w}", weekNum);
+            dateFmt = dateFmt.replace("{w}", ("" + weekNum).padStart(2, "0"));
         }
         if (dateFmt.includes("{wd}")) {
             let weekday = new Date(clock.date).getDay();
@@ -31,7 +31,23 @@ Singleton {
             }
             dateFmt = dateFmt.replace("{wd}", weekday);
         }
-
+        if (dateFmt.includes("{od}")) {
+            const jsDate = new Date(clock.date);
+            const startOfYear = new Date(jsDate.getFullYear(), 0, 1);
+            const timeDiff = jsDate.getTime() - startOfYear.getTime();
+            const ordinalDate = Math.floor(timeDiff / (1000 * 60 * 60 * 24)) + 1;
+            dateFmt = dateFmt.replace("{od}", ("" + ordinalDate).padStart(3, "0"));
+        }
+        if (dateFmt.includes("{dy}")) {
+            const year = (new Date(clock.date)).getFullYear();
+            let daysInYear;
+            if ((year % 400 === 0) || (year % 100 !== 0 && year % 4 === 0)) {
+                daysInYear = 366; // Leap year
+            } else {
+                daysInYear = 365; // Common year
+            }
+            dateFmt = dateFmt.replace("{dy}", daysInYear);
+        }
         Qt.locale().toString(clock.date, dateFmt ?? "dddd, dd/MM")
     }
     property string collapsedCalendarFormat: Qt.locale().toString(clock.date, "dd MMMM yyyy")
