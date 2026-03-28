@@ -11,7 +11,7 @@ add_newline = false
 # $character
 # """
 format = """
-$cmd_duration $directory $git_branch $python
+$cmd_duration $directory $git_branch$python
 $character"""
 
 # Replace the "❯" symbol in the prompt with "➜"
