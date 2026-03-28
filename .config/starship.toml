@@ -28,7 +28,7 @@ style = "bg: bright-cyan"
 symbol = "󰘬"
 truncation_length = 12
 truncation_symbol = ""
-format = "󰜥 [](bold fg:bright-cyan)[$symbol $branch(:$remote_branch)](fg:black bg:bright-cyan)[ ](bold fg:bright-cyan)"
+format = "[](bold fg:bright-cyan)[$symbol $branch(:$remote_branch)](fg:black bg:bright-cyan)[ ](bold fg:bright-cyan)"
 
 [git_commit]
 commit_hash_length = 4
@@ -101,7 +101,7 @@ min_time = 1_000
 format = '[](bold fg:yellow)[󰪢 $duration](bold bg:yellow fg:black)[](bold fg:yellow)'
 
 [python]
-format = '[${symbol} ($virtualenv)]($style) '
-symbol = "󰌠"
-style = "bold fg:yellow"
+format = '[](bold fg:yellow)[${symbol}($virtualenv)]($style)[](bold fg:yellow)'
+symbol = "󰌠 "
+style = "bg:yellow fg:black"
 
